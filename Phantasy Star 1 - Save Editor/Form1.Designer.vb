@@ -105,6 +105,7 @@ Partial Class Form1
         Me.btnInventoryDelete = New System.Windows.Forms.Button()
         Me.Meseta = New System.Windows.Forms.NumericUpDown()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -985,11 +986,21 @@ Partial Class Form1
         Me.Label30.TabIndex = 13
         Me.Label30.Text = "Meseta"
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Location = New System.Drawing.Point(738, 124)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(493, 214)
+        Me.GroupBox2.TabIndex = 14
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Event Flags"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1243, 699)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Meseta)
         Me.Controls.Add(Me.btnInventoryDelete)
@@ -1135,4 +1146,5 @@ Partial Class Form1
     Friend WithEvents btnInventoryDelete As Button
     Friend WithEvents Meseta As NumericUpDown
     Friend WithEvents Label30 As Label
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
