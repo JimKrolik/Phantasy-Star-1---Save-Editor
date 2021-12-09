@@ -1,5 +1,5 @@
 # Phantasy Star 1 - Save Editor
-A save editor for modifying an SRM save file for Phantasy Star 1.
+A save editor for modifying an SRM (non save state) save file for Phantasy Star 1.
 
 I started this project as a way to understand the inner workings of how the Genesis and Master System save their game data.
 

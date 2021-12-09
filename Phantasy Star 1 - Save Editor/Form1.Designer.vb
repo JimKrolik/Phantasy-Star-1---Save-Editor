@@ -964,9 +964,9 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(738, 167)
+        Me.GroupBox2.Location = New System.Drawing.Point(738, 181)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(493, 171)
+        Me.GroupBox2.Size = New System.Drawing.Size(493, 157)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Event Flags"

@@ -17,5 +17,10 @@ Public Class Game
         "Skure"
     }
 
+    Public Shared LocationActiveDungeon() As String = {
+        }
+
+    Public Shared LocationDungeonDirection() As String = {
+        }
 
 End Class
