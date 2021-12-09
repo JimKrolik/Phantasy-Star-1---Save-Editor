@@ -67,7 +67,8 @@ Public Class Items
     "Gas Shield",       '3B
     "Crystal",          '3C
     "M System (Unused)",'3D
-    "Miracle Key"      '3E
+    "Miracle Key",       '3E
+    ""
     }
 
 End Class

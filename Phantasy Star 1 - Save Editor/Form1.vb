@@ -142,6 +142,18 @@ Public Class Form1
         Next
         cmbItems.SelectedIndex = 0
 
+        '########################
+        '### Recall Drop Down ###
+        '########################
+
+        cmbRecall.Items.Clear()
+        For i = 0 To 8
+            cmbRecall.Items.Add(Game.RecallLocation(i))
+        Next
+
+        cmbRecall.SelectedIndex = bytes(Game.TransferRecallOffset(currentSave))
+
+
         '##############
         '### Meseta ###
         '##############
@@ -355,6 +367,13 @@ Public Class Form1
         file.Seek(Items.InventoryOffset(currentSave) + 34, SeekOrigin.Begin)
         file.WriteByte(Convert.ToByte(Hex(lstInventory.Items.Count), 16))
 
+        '########################
+        '### Recall Drop Down ###
+        '########################
+
+        file.Seek(Game.TransferRecallOffset(currentSave), SeekOrigin.Begin)
+        file.WriteByte(Convert.ToByte(Hex(cmbRecall.SelectedIndex), 16))
+
         '##########
         '# Meseta #
         '##########
@@ -398,7 +417,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub btnInventoryAdd_Click(sender As Object, e As EventArgs) Handles btnInventoryAdd.Click
+    Private Sub btnInventoryAdd_Click(sender As Object, e As EventArgs) 
         lstInventory.Items.Add(Items.Name(cmbItems.SelectedIndex + 1)) 'Offset the 0 base
 
         'Disable Add button if the inventory is maxed out.
@@ -407,7 +426,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs) Handles btnInventoryDelete.Click
+    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs) 
         lstInventory.Items.Remove(lstInventory.SelectedItem)
 
         'Disable Delete button if inventory is empty

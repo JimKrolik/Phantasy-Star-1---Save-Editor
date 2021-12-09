@@ -100,12 +100,15 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lstInventory = New System.Windows.Forms.ListBox()
-        Me.cmbItems = New System.Windows.Forms.ComboBox()
-        Me.btnInventoryAdd = New System.Windows.Forms.Button()
-        Me.btnInventoryDelete = New System.Windows.Forms.Button()
         Me.Meseta = New System.Windows.Forms.NumericUpDown()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmbRecall = New System.Windows.Forms.ComboBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnInventoryDelete = New System.Windows.Forms.Button()
+        Me.btnInventoryAdd = New System.Windows.Forms.Button()
+        Me.cmbItems = New System.Windows.Forms.ComboBox()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,6 +146,8 @@ Partial Class Form1
         CType(Me.NoahCurrentHP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NoahLevel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Meseta, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLoad
@@ -183,7 +188,7 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(59, 245)
+        Me.TextBox1.Location = New System.Drawing.Point(13, 286)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 23)
         Me.TextBox1.TabIndex = 28
@@ -940,38 +945,9 @@ Partial Class Form1
         Me.lstInventory.Size = New System.Drawing.Size(99, 319)
         Me.lstInventory.TabIndex = 8
         '
-        'cmbItems
-        '
-        Me.cmbItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbItems.FormattingEnabled = True
-        Me.cmbItems.Location = New System.Drawing.Point(737, 19)
-        Me.cmbItems.Name = "cmbItems"
-        Me.cmbItems.Size = New System.Drawing.Size(114, 23)
-        Me.cmbItems.TabIndex = 9
-        '
-        'btnInventoryAdd
-        '
-        Me.btnInventoryAdd.Enabled = False
-        Me.btnInventoryAdd.Location = New System.Drawing.Point(737, 48)
-        Me.btnInventoryAdd.Name = "btnInventoryAdd"
-        Me.btnInventoryAdd.Size = New System.Drawing.Size(45, 23)
-        Me.btnInventoryAdd.TabIndex = 10
-        Me.btnInventoryAdd.Text = "Add"
-        Me.btnInventoryAdd.UseVisualStyleBackColor = True
-        '
-        'btnInventoryDelete
-        '
-        Me.btnInventoryDelete.Enabled = False
-        Me.btnInventoryDelete.Location = New System.Drawing.Point(788, 48)
-        Me.btnInventoryDelete.Name = "btnInventoryDelete"
-        Me.btnInventoryDelete.Size = New System.Drawing.Size(63, 23)
-        Me.btnInventoryDelete.TabIndex = 11
-        Me.btnInventoryDelete.Text = "Delete"
-        Me.btnInventoryDelete.UseVisualStyleBackColor = True
-        '
         'Meseta
         '
-        Me.Meseta.Location = New System.Drawing.Point(789, 87)
+        Me.Meseta.Location = New System.Drawing.Point(795, 104)
         Me.Meseta.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.Meseta.Name = "Meseta"
         Me.Meseta.Size = New System.Drawing.Size(62, 23)
@@ -980,7 +956,7 @@ Partial Class Form1
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(737, 89)
+        Me.Label30.Location = New System.Drawing.Point(743, 106)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(45, 15)
         Me.Label30.TabIndex = 13
@@ -995,17 +971,76 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Event Flags"
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.cmbRecall)
+        Me.GroupBox3.Location = New System.Drawing.Point(872, 19)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(97, 52)
+        Me.GroupBox3.TabIndex = 16
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Transfer Recall"
+        '
+        'cmbRecall
+        '
+        Me.cmbRecall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbRecall.FormattingEnabled = True
+        Me.cmbRecall.Location = New System.Drawing.Point(6, 22)
+        Me.cmbRecall.Name = "cmbRecall"
+        Me.cmbRecall.Size = New System.Drawing.Size(82, 23)
+        Me.cmbRecall.TabIndex = 16
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btnInventoryDelete)
+        Me.GroupBox4.Controls.Add(Me.btnInventoryAdd)
+        Me.GroupBox4.Controls.Add(Me.cmbItems)
+        Me.GroupBox4.Location = New System.Drawing.Point(738, 19)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(128, 79)
+        Me.GroupBox4.TabIndex = 17
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Inventory Controls"
+        '
+        'btnInventoryDelete
+        '
+        Me.btnInventoryDelete.Enabled = False
+        Me.btnInventoryDelete.Location = New System.Drawing.Point(57, 51)
+        Me.btnInventoryDelete.Name = "btnInventoryDelete"
+        Me.btnInventoryDelete.Size = New System.Drawing.Size(63, 23)
+        Me.btnInventoryDelete.TabIndex = 14
+        Me.btnInventoryDelete.Text = "Delete"
+        Me.btnInventoryDelete.UseVisualStyleBackColor = True
+        '
+        'btnInventoryAdd
+        '
+        Me.btnInventoryAdd.Enabled = False
+        Me.btnInventoryAdd.Location = New System.Drawing.Point(6, 51)
+        Me.btnInventoryAdd.Name = "btnInventoryAdd"
+        Me.btnInventoryAdd.Size = New System.Drawing.Size(45, 23)
+        Me.btnInventoryAdd.TabIndex = 13
+        Me.btnInventoryAdd.Text = "Add"
+        Me.btnInventoryAdd.UseVisualStyleBackColor = True
+        '
+        'cmbItems
+        '
+        Me.cmbItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbItems.FormattingEnabled = True
+        Me.cmbItems.Location = New System.Drawing.Point(6, 22)
+        Me.cmbItems.Name = "cmbItems"
+        Me.cmbItems.Size = New System.Drawing.Size(114, 23)
+        Me.cmbItems.TabIndex = 12
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1243, 699)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Meseta)
-        Me.Controls.Add(Me.btnInventoryDelete)
-        Me.Controls.Add(Me.btnInventoryAdd)
-        Me.Controls.Add(Me.cmbItems)
         Me.Controls.Add(Me.lstInventory)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnSave)
@@ -1058,6 +1093,8 @@ Partial Class Form1
         CType(Me.NoahCurrentHP, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NoahLevel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Meseta, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1141,10 +1178,13 @@ Partial Class Form1
     Friend WithEvents NoahLevel As NumericUpDown
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lstInventory As ListBox
-    Friend WithEvents cmbItems As ComboBox
-    Friend WithEvents btnInventoryAdd As Button
-    Friend WithEvents btnInventoryDelete As Button
     Friend WithEvents Meseta As NumericUpDown
     Friend WithEvents Label30 As Label
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents cmbRecall As ComboBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents btnInventoryDelete As Button
+    Friend WithEvents btnInventoryAdd As Button
+    Friend WithEvents cmbItems As ComboBox
 End Class
