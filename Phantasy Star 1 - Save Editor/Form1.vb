@@ -162,6 +162,19 @@ Public Class Form1
         mstHigh = bytes(Game.MesetaOffset(currentSave) + 1)
         Meseta.Value = ((mstHigh * 256) + mstLow)
 
+        '##############
+        '### Chests ###
+        '##############
+
+        For i = 0 To 64
+            If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
+                checkChests(i, False)
+            Else
+                checkChests(i, True)
+            End If
+
+        Next
+
 
         file.Dispose()
         file.Close()
@@ -174,6 +187,8 @@ Public Class Form1
         btnSave.Enabled = vbFalse
 
         Dim currentSave As Integer = 0
+
+
 
         Dim valueToWrite As Byte = vbNull
         Dim file As New FileStream("C:\Users\James\AppData\Roaming\RetroArch\saves\Phantasy Star 1.srm", FileMode.Open, FileAccess.Write)
@@ -387,6 +402,8 @@ Public Class Form1
         file.WriteByte(Convert.ToByte(Hex(Int(Meseta.Value Mod 256)), 16))
 
 
+
+
         '#################
         '# Sanity Checks #
         '#################
@@ -399,7 +416,6 @@ Public Class Form1
             'Update check mark visual without reloading save.
             AlisActive.Checked = True
         End If
-
 
 
 
@@ -426,7 +442,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs) 
+    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs)
         lstInventory.Items.Remove(lstInventory.SelectedItem)
 
         'Disable Delete button if inventory is empty
@@ -439,4 +455,171 @@ Public Class Form1
             btnInventoryAdd.Enabled = True
         End If
     End Sub
+
+    Public Sub checkChests(checkBoxNum As Integer, isItChecked As Boolean)
+        'Map our checkboxes into an array 
+        Dim chest(200) As CheckBox
+
+        chest(0) = CH001            'Palma      Camineet            Compass
+        chest(1) = CH002            'Palma      Medusa Cave         --need to check    
+        chest(2) = CH003            'Palma      Medusa Cave         --need to check
+        chest(3) = CH004            'Palma      Dr. Luveno Cave     Empty
+        chest(4) = CH005            'Palma      Camineet            Dungeon Key
+        chest(5) = CH006            'Palma      Camineet            50 MST
+        chest(6) = CH007            'Palma      Dr. Mad Cave        30 MST
+        chest(7) = CH008            'Palma      Dr. Mad Cave        20 MST
+        chest(8) = dummy
+        chest(9) = dummy
+        chest(10) = dummy
+        chest(11) = dummy
+        chest(12) = dummy
+        chest(13) = dummy
+        chest(14) = dummy
+        chest(15) = dummy
+        chest(16) = dummy
+        chest(17) = dummy
+        chest(18) = dummy
+        chest(19) = dummy
+        chest(20) = dummy
+        chest(21) = dummy
+        chest(22) = dummy
+        chest(23) = dummy
+        chest(24) = dummy
+        chest(25) = dummy
+        chest(26) = dummy
+        chest(27) = dummy
+        chest(28) = dummy
+        chest(29) = dummy
+        chest(30) = dummy
+        chest(31) = dummy
+        chest(32) = dummy
+        chest(33) = dummy
+        chest(34) = dummy
+        chest(35) = dummy
+        chest(36) = dummy
+        chest(37) = dummy
+        chest(38) = dummy
+        chest(39) = dummy
+        chest(40) = dummy
+        chest(41) = dummy
+        chest(42) = dummy
+        chest(43) = dummy
+        chest(44) = dummy
+        chest(45) = dummy
+        chest(46) = dummy
+        chest(47) = dummy
+        chest(48) = dummy
+        chest(49) = dummy
+        chest(50) = dummy
+        chest(51) = dummy
+        chest(52) = dummy
+        chest(53) = dummy
+        chest(54) = dummy
+        chest(55) = dummy
+        chest(56) = dummy
+        chest(57) = dummy
+        chest(58) = dummy
+        chest(59) = dummy
+        chest(60) = dummy
+        chest(61) = dummy
+        chest(62) = dummy
+        'chest(8) = CH009
+        'chest(9) = CH0010
+        'chest(10) = CH011
+        'chest(11) = CH012
+        'chest(12) = CH013
+        'chest(13) = CH014
+        'chest(14) = CH015
+        'chest(15) = CH016
+        'chest(16) = CH017
+        'chest(17) = CH018
+        'chest(18) = CH019
+        'chest(19) = CH020
+        'chest(20) = CH021
+        'chest(21) = CH022
+        'chest(22) = CH023
+        'chest(23) = CH024
+        'chest(24) = CH025
+        'chest(25) = CH026
+        'chest(26) = CH027
+        'chest(27) = CH028
+        'chest(28) = CH029
+        'chest(29) = CH030
+        'chest(30) = CH031
+        'chest(31) = CH032
+        'chest(32) = CH033
+        'chest(33) = CH034
+        'chest(34) = CH035
+        'chest(35) = CH036
+        'chest(36) = CH037
+        'chest(37) = CH038
+        'chest(38) = CH039
+        'chest(39) = CH040
+        'chest(40) = CH041
+        'chest(41) = CH042
+        'chest(42) = CH043
+        'chest(43) = CH044
+        'chest(44) = CH045
+        'chest(45) = CH046
+        'chest(46) = CH047
+        'chest(47) = CH048
+        'chest(48) = CH049
+        'chest(49) = CH050
+        'chest(50) = CH051
+        'chest(51) = CH052
+        'chest(52) = CH053
+        'chest(53) = CH054
+        'chest(54) = CH055
+        'chest(55) = CH056
+        'chest(56) = CH057
+        'chest(57) = CH058
+        'chest(58) = CH059
+        'chest(59) = CH060
+        'chest(60) = CH061
+        'chest(61) = CH62
+        chest(62) = CH063           'Palma      Scion Cave      Cola (Level 4)
+        chest(63) = CH064           'Palma      Scion Cave      Empty (Level 4)
+        chest(64) = CH065           'Palma      Naula Cave      Flash
+        '
+        'chest(65) = CH66
+        'chest(66) = CH67
+        'chest(67) = CH68
+        'chest(68) = CH69
+        'chest(69) = CH70
+        'chest(70) = CH71
+        'chest(71) = CH72
+        'chest(72) = CH73
+        'chest(73) = CH74
+        'chest(74) = CH75
+        'chest(75) = CH76
+        'chest(76) = CH77
+        'chest(77) = CH78
+        'chest(78) = CH79
+        'chest(79) = CH80
+        'chest(80) = CH81
+        'chest(81) = CH82
+        'chest(82) = CH83
+        'chest(83) = CH84
+        'chest(84) = CH85
+        'chest(85) = CH86
+        'chest(86) = CH87
+        'chest(87) = CH88
+        'chest(88) = CH89
+        'chest(89) = CH90
+        'chest(90) = CH91
+        'chest(91) = CH92
+        'chest(92) = CH93
+        'chest(93) = CH94
+        'chest(94) = CH95
+        'chest(95) = CH96
+        'chest(96) = CH97
+        'chest(97) = CH98
+        'chest(98) = CH99
+        'chest(99) = CH100
+
+        chest(checkBoxNum).Checked = isItChecked
+
+    End Sub
+
+
 End Class
