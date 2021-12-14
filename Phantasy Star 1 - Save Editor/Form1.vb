@@ -6,7 +6,7 @@ Public Class Form1
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
 
         btnSave.Enabled = True
-        btnInventoryAdd.Enabled = True
+        grpMotavia.Enabled = True
         btnInventoryDelete.Enabled = True
 
         Dim currentSave As Integer = 0
@@ -174,6 +174,14 @@ Public Class Form1
             End If
 
         Next
+
+        '#####################
+        '### Form Controls ###
+        '#####################
+
+        If lstInventory.Items.Count >= 32 Then
+            btnInventoryAdd.Enabled = False
+        End If
 
 
         file.Dispose()
@@ -433,28 +441,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub btnInventoryAdd_Click(sender As Object, e As EventArgs) 
-        lstInventory.Items.Add(Items.Name(cmbItems.SelectedIndex + 1)) 'Offset the 0 base
 
-        'Disable Add button if the inventory is maxed out.
-        If lstInventory.Items.Count >= 32 Then
-            btnInventoryAdd.Enabled = False
-        End If
-    End Sub
-
-    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs)
-        lstInventory.Items.Remove(lstInventory.SelectedItem)
-
-        'Disable Delete button if inventory is empty
-        If lstInventory.Items.Count <= 0 Then
-            btnInventoryDelete.Enabled = False
-        End If
-
-        'Re-enable the add button if the inventory is not maxed out.
-        If lstInventory.Items.Count < 32 Then
-            btnInventoryAdd.Enabled = True
-        End If
-    End Sub
 
     Public Sub checkChests(checkBoxNum As Integer, isItChecked As Boolean)
         'Map our checkboxes into an array 
@@ -621,5 +608,27 @@ Public Class Form1
 
     End Sub
 
+    Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs) Handles btnInventoryDelete.Click
+        lstInventory.Items.Remove(lstInventory.SelectedItem)
+
+        'Disable Delete button if inventory is empty
+        If lstInventory.Items.Count <= 0 Then
+            btnInventoryDelete.Enabled = False
+        End If
+
+        'Re-enable the add button if the inventory is not maxed out.
+        If lstInventory.Items.Count < 32 Then
+            btnInventoryAdd.Enabled = True
+        End If
+    End Sub
+
+    Private Sub btnInventoryAdd_Click_1(sender As Object, e As EventArgs) Handles btnInventoryAdd.Click
+        lstInventory.Items.Add(Items.Name(cmbItems.SelectedIndex + 1)) 'Offset the 0 base
+
+        'Disable Add button if the inventory is maxed out.
+        If lstInventory.Items.Count >= 32 Then
+            btnInventoryAdd.Enabled = False
+        End If
+    End Sub
 
 End Class

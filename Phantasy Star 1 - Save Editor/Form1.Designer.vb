@@ -99,7 +99,24 @@ Partial Class Form1
         Me.chkFreeMode = New System.Windows.Forms.CheckBox()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.dummy = New System.Windows.Forms.CheckBox()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.grpMotavia = New System.Windows.Forms.GroupBox()
+        Me.lstInventory = New System.Windows.Forms.ListBox()
+        Me.Meseta = New System.Windows.Forms.NumericUpDown()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmbRecall = New System.Windows.Forms.ComboBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnInventoryDelete = New System.Windows.Forms.Button()
+        Me.cmbItems = New System.Windows.Forms.ComboBox()
+        Me.btnInventoryAdd = New System.Windows.Forms.Button()
+        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.CH065 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.CH064 = New System.Windows.Forms.CheckBox()
+        Me.CH063 = New System.Windows.Forms.CheckBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
         Me.CH008 = New System.Windows.Forms.CheckBox()
         Me.CH007 = New System.Windows.Forms.CheckBox()
@@ -112,24 +129,9 @@ Partial Class Form1
         Me.CH006 = New System.Windows.Forms.CheckBox()
         Me.CH005 = New System.Windows.Forms.CheckBox()
         Me.CH001 = New System.Windows.Forms.CheckBox()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.lstInventory = New System.Windows.Forms.ListBox()
-        Me.Meseta = New System.Windows.Forms.NumericUpDown()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.cmbRecall = New System.Windows.Forms.ComboBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btnInventoryDelete = New System.Windows.Forms.Button()
-        Me.btnInventoryAdd = New System.Windows.Forms.Button()
-        Me.cmbItems = New System.Windows.Forms.ComboBox()
-        Me.dummy = New System.Windows.Forms.CheckBox()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
-        Me.CH063 = New System.Windows.Forms.CheckBox()
-        Me.CH064 = New System.Windows.Forms.CheckBox()
-        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
-        Me.CH065 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -167,16 +169,17 @@ Partial Class Form1
         CType(Me.NoahCurrentHP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NoahLevel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.grpMotavia.SuspendLayout()
+        CType(Me.Meseta, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox13.SuspendLayout()
+        Me.GroupBox12.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
         Me.GroupBox10.SuspendLayout()
         Me.GroupBox9.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
-        CType(Me.Meseta, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLoad
@@ -190,7 +193,6 @@ Partial Class Form1
         '
         'grpAlis
         '
-        Me.grpAlis.Controls.Add(Me.TextBox1)
         Me.grpAlis.Controls.Add(Me.AlisEXP)
         Me.grpAlis.Controls.Add(Me.Label5)
         Me.grpAlis.Controls.Add(Me.AlisDefense)
@@ -210,16 +212,16 @@ Partial Class Form1
         Me.grpAlis.Controls.Add(Me.AlisLevel)
         Me.grpAlis.Location = New System.Drawing.Point(102, 12)
         Me.grpAlis.Name = "grpAlis"
-        Me.grpAlis.Size = New System.Drawing.Size(259, 326)
+        Me.grpAlis.Size = New System.Drawing.Size(185, 333)
         Me.grpAlis.TabIndex = 1
         Me.grpAlis.TabStop = False
         Me.grpAlis.Text = "Alis"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(13, 286)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 147)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(75, 23)
         Me.TextBox1.TabIndex = 28
         '
         'AlisEXP
@@ -400,9 +402,9 @@ Partial Class Form1
         Me.grpMyau.Controls.Add(Me.Label12)
         Me.grpMyau.Controls.Add(Me.Label13)
         Me.grpMyau.Controls.Add(Me.MyauLevel)
-        Me.grpMyau.Location = New System.Drawing.Point(367, 12)
+        Me.grpMyau.Location = New System.Drawing.Point(293, 19)
         Me.grpMyau.Name = "grpMyau"
-        Me.grpMyau.Size = New System.Drawing.Size(259, 326)
+        Me.grpMyau.Size = New System.Drawing.Size(185, 326)
         Me.grpMyau.TabIndex = 2
         Me.grpMyau.TabStop = False
         Me.grpMyau.Text = "Myau"
@@ -587,7 +589,7 @@ Partial Class Form1
         Me.grpOdin.Controls.Add(Me.OdinLevel)
         Me.grpOdin.Location = New System.Drawing.Point(102, 353)
         Me.grpOdin.Name = "grpOdin"
-        Me.grpOdin.Size = New System.Drawing.Size(259, 335)
+        Me.grpOdin.Size = New System.Drawing.Size(185, 335)
         Me.grpOdin.TabIndex = 3
         Me.grpOdin.TabStop = False
         Me.grpOdin.Text = "Odin"
@@ -770,9 +772,9 @@ Partial Class Form1
         Me.grpNoah.Controls.Add(Me.Label28)
         Me.grpNoah.Controls.Add(Me.Label29)
         Me.grpNoah.Controls.Add(Me.NoahLevel)
-        Me.grpNoah.Location = New System.Drawing.Point(367, 353)
+        Me.grpNoah.Location = New System.Drawing.Point(293, 353)
         Me.grpNoah.Name = "grpNoah"
-        Me.grpNoah.Size = New System.Drawing.Size(259, 335)
+        Me.grpNoah.Size = New System.Drawing.Size(185, 335)
         Me.grpNoah.TabIndex = 4
         Me.grpNoah.TabStop = False
         Me.grpNoah.Text = "Noah"
@@ -958,31 +960,194 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.GroupBox5)
-        Me.GroupBox1.Controls.Add(Me.GroupBox7)
-        Me.GroupBox1.Controls.Add(Me.GroupBox6)
-        Me.GroupBox1.Location = New System.Drawing.Point(632, 353)
+        Me.GroupBox1.Controls.Add(Me.GroupBox13)
+        Me.GroupBox1.Controls.Add(Me.GroupBox12)
+        Me.GroupBox1.Controls.Add(Me.GroupBox11)
+        Me.GroupBox1.Controls.Add(Me.GroupBox10)
+        Me.GroupBox1.Controls.Add(Me.GroupBox9)
+        Me.GroupBox1.Controls.Add(Me.GroupBox8)
+        Me.GroupBox1.Location = New System.Drawing.Point(716, 19)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(599, 335)
+        Me.GroupBox1.Size = New System.Drawing.Size(496, 335)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Chests"
+        Me.GroupBox1.Text = "Palma Chests"
         '
-        'GroupBox5
+        'dummy
         '
-        Me.GroupBox5.Controls.Add(Me.GroupBox13)
-        Me.GroupBox5.Controls.Add(Me.GroupBox12)
-        Me.GroupBox5.Controls.Add(Me.dummy)
-        Me.GroupBox5.Controls.Add(Me.GroupBox11)
-        Me.GroupBox5.Controls.Add(Me.GroupBox10)
-        Me.GroupBox5.Controls.Add(Me.GroupBox9)
-        Me.GroupBox5.Controls.Add(Me.GroupBox8)
-        Me.GroupBox5.Location = New System.Drawing.Point(7, 22)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(380, 307)
-        Me.GroupBox5.TabIndex = 3
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Palma"
+        Me.dummy.AutoSize = True
+        Me.dummy.Location = New System.Drawing.Point(28, 81)
+        Me.dummy.Name = "dummy"
+        Me.dummy.Size = New System.Drawing.Size(68, 19)
+        Me.dummy.TabIndex = 4
+        Me.dummy.Text = "dummy"
+        Me.dummy.UseVisualStyleBackColor = True
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.dummy)
+        Me.GroupBox7.Location = New System.Drawing.Point(947, 357)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(228, 331)
+        Me.GroupBox7.TabIndex = 2
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Dezolis"
+        '
+        'grpMotavia
+        '
+        Me.grpMotavia.Controls.Add(Me.GroupBox14)
+        Me.grpMotavia.Controls.Add(Me.GroupBox6)
+        Me.grpMotavia.Controls.Add(Me.GroupBox5)
+        Me.grpMotavia.Location = New System.Drawing.Point(716, 360)
+        Me.grpMotavia.Name = "grpMotavia"
+        Me.grpMotavia.Size = New System.Drawing.Size(200, 328)
+        Me.grpMotavia.TabIndex = 1
+        Me.grpMotavia.TabStop = False
+        Me.grpMotavia.Text = "Motavia Chests"
+        '
+        'lstInventory
+        '
+        Me.lstInventory.FormattingEnabled = True
+        Me.lstInventory.ItemHeight = 15
+        Me.lstInventory.Location = New System.Drawing.Point(484, 19)
+        Me.lstInventory.Name = "lstInventory"
+        Me.lstInventory.Size = New System.Drawing.Size(99, 319)
+        Me.lstInventory.TabIndex = 8
+        '
+        'Meseta
+        '
+        Me.Meseta.Location = New System.Drawing.Point(647, 104)
+        Me.Meseta.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.Meseta.Name = "Meseta"
+        Me.Meseta.Size = New System.Drawing.Size(62, 23)
+        Me.Meseta.TabIndex = 12
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(595, 106)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(45, 15)
+        Me.Label30.TabIndex = 13
+        Me.Label30.Text = "Meseta"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Location = New System.Drawing.Point(495, 353)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(145, 157)
+        Me.GroupBox2.TabIndex = 14
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Event Flags"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.cmbRecall)
+        Me.GroupBox3.Location = New System.Drawing.Point(596, 135)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(97, 52)
+        Me.GroupBox3.TabIndex = 16
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Transfer Recall"
+        '
+        'cmbRecall
+        '
+        Me.cmbRecall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbRecall.FormattingEnabled = True
+        Me.cmbRecall.Location = New System.Drawing.Point(6, 22)
+        Me.cmbRecall.Name = "cmbRecall"
+        Me.cmbRecall.Size = New System.Drawing.Size(82, 23)
+        Me.cmbRecall.TabIndex = 16
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btnInventoryDelete)
+        Me.GroupBox4.Controls.Add(Me.cmbItems)
+        Me.GroupBox4.Controls.Add(Me.btnInventoryAdd)
+        Me.GroupBox4.Location = New System.Drawing.Point(590, 19)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(128, 79)
+        Me.GroupBox4.TabIndex = 17
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Inventory Controls"
+        '
+        'btnInventoryDelete
+        '
+        Me.btnInventoryDelete.Location = New System.Drawing.Point(57, 51)
+        Me.btnInventoryDelete.Name = "btnInventoryDelete"
+        Me.btnInventoryDelete.Size = New System.Drawing.Size(62, 23)
+        Me.btnInventoryDelete.TabIndex = 19
+        Me.btnInventoryDelete.Text = "Delete"
+        Me.btnInventoryDelete.UseVisualStyleBackColor = True
+        '
+        'cmbItems
+        '
+        Me.cmbItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbItems.FormattingEnabled = True
+        Me.cmbItems.Location = New System.Drawing.Point(6, 22)
+        Me.cmbItems.Name = "cmbItems"
+        Me.cmbItems.Size = New System.Drawing.Size(114, 23)
+        Me.cmbItems.TabIndex = 12
+        '
+        'btnInventoryAdd
+        '
+        Me.btnInventoryAdd.Location = New System.Drawing.Point(6, 51)
+        Me.btnInventoryAdd.Name = "btnInventoryAdd"
+        Me.btnInventoryAdd.Size = New System.Drawing.Size(44, 23)
+        Me.btnInventoryAdd.TabIndex = 18
+        Me.btnInventoryAdd.Text = "Add"
+        Me.btnInventoryAdd.UseVisualStyleBackColor = True
+        '
+        'GroupBox13
+        '
+        Me.GroupBox13.Controls.Add(Me.CH065)
+        Me.GroupBox13.Location = New System.Drawing.Point(126, 200)
+        Me.GroupBox13.Name = "GroupBox13"
+        Me.GroupBox13.Size = New System.Drawing.Size(101, 100)
+        Me.GroupBox13.TabIndex = 12
+        Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Text = "Naula Cave"
+        '
+        'CH065
+        '
+        Me.CH065.AutoSize = True
+        Me.CH065.Location = New System.Drawing.Point(6, 17)
+        Me.CH065.Name = "CH065"
+        Me.CH065.Size = New System.Drawing.Size(53, 19)
+        Me.CH065.TabIndex = 0
+        Me.CH065.Text = "Flash"
+        Me.CH065.UseVisualStyleBackColor = True
+        '
+        'GroupBox12
+        '
+        Me.GroupBox12.Controls.Add(Me.CH064)
+        Me.GroupBox12.Controls.Add(Me.CH063)
+        Me.GroupBox12.Location = New System.Drawing.Point(126, 93)
+        Me.GroupBox12.Name = "GroupBox12"
+        Me.GroupBox12.Size = New System.Drawing.Size(101, 100)
+        Me.GroupBox12.TabIndex = 11
+        Me.GroupBox12.TabStop = False
+        Me.GroupBox12.Text = "Scion Cave"
+        '
+        'CH064
+        '
+        Me.CH064.AutoSize = True
+        Me.CH064.Location = New System.Drawing.Point(6, 37)
+        Me.CH064.Name = "CH064"
+        Me.CH064.Size = New System.Drawing.Size(83, 19)
+        Me.CH064.TabIndex = 1
+        Me.CH064.Text = "Empty (L4)"
+        Me.CH064.UseVisualStyleBackColor = True
+        '
+        'CH063
+        '
+        Me.CH063.AutoSize = True
+        Me.CH063.Location = New System.Drawing.Point(6, 18)
+        Me.CH063.Name = "CH063"
+        Me.CH063.Size = New System.Drawing.Size(73, 19)
+        Me.CH063.TabIndex = 0
+        Me.CH063.Text = "Cola (L4)"
+        Me.CH063.UseVisualStyleBackColor = True
         '
         'GroupBox11
         '
@@ -991,9 +1156,9 @@ Partial Class Form1
         Me.GroupBox11.Location = New System.Drawing.Point(126, 23)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(101, 67)
-        Me.GroupBox11.TabIndex = 3
+        Me.GroupBox11.TabIndex = 10
         Me.GroupBox11.TabStop = False
-        Me.GroupBox11.Text = "Dr. Mad Cave"
+        Me.GroupBox11.Text = "Dr. Mad Psg."
         '
         'CH008
         '
@@ -1021,9 +1186,9 @@ Partial Class Form1
         Me.GroupBox10.Location = New System.Drawing.Point(6, 217)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(112, 65)
-        Me.GroupBox10.TabIndex = 2
+        Me.GroupBox10.TabIndex = 9
         Me.GroupBox10.TabStop = False
-        Me.GroupBox10.Text = "Dr. Luveno Cave"
+        Me.GroupBox10.Text = "Dr. Luveno Psg."
         '
         'CH004
         '
@@ -1042,9 +1207,9 @@ Partial Class Form1
         Me.GroupBox9.Location = New System.Drawing.Point(6, 111)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(113, 100)
-        Me.GroupBox9.TabIndex = 1
+        Me.GroupBox9.TabIndex = 8
         Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "Medusa Cave"
+        Me.GroupBox9.Text = "Odin Cave"
         '
         'CH003
         '
@@ -1074,7 +1239,7 @@ Partial Class Form1
         Me.GroupBox8.Location = New System.Drawing.Point(6, 22)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(113, 83)
-        Me.GroupBox8.TabIndex = 0
+        Me.GroupBox8.TabIndex = 7
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Camineet"
         '
@@ -1108,185 +1273,40 @@ Partial Class Form1
         Me.CH001.Text = "Compass"
         Me.CH001.UseVisualStyleBackColor = True
         '
-        'GroupBox7
+        'GroupBox5
         '
-        Me.GroupBox7.Location = New System.Drawing.Point(393, 128)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox7.TabIndex = 2
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "Dezolis"
+        Me.GroupBox5.Location = New System.Drawing.Point(7, 23)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(121, 100)
+        Me.GroupBox5.TabIndex = 0
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Tajim Cave"
         '
         'GroupBox6
         '
-        Me.GroupBox6.Location = New System.Drawing.Point(393, 22)
+        Me.GroupBox6.Location = New System.Drawing.Point(7, 130)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox6.Size = New System.Drawing.Size(121, 100)
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "Motavia"
+        Me.GroupBox6.Text = "Noah Cave"
         '
-        'lstInventory
+        'GroupBox14
         '
-        Me.lstInventory.FormattingEnabled = True
-        Me.lstInventory.ItemHeight = 15
-        Me.lstInventory.Location = New System.Drawing.Point(632, 19)
-        Me.lstInventory.Name = "lstInventory"
-        Me.lstInventory.Size = New System.Drawing.Size(99, 319)
-        Me.lstInventory.TabIndex = 8
-        '
-        'Meseta
-        '
-        Me.Meseta.Location = New System.Drawing.Point(795, 104)
-        Me.Meseta.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.Meseta.Name = "Meseta"
-        Me.Meseta.Size = New System.Drawing.Size(62, 23)
-        Me.Meseta.TabIndex = 12
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(743, 106)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(45, 15)
-        Me.Label30.TabIndex = 13
-        Me.Label30.Text = "Meseta"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Location = New System.Drawing.Point(738, 181)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(493, 157)
-        Me.GroupBox2.TabIndex = 14
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Event Flags"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.cmbRecall)
-        Me.GroupBox3.Location = New System.Drawing.Point(872, 19)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(97, 52)
-        Me.GroupBox3.TabIndex = 16
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Transfer Recall"
-        '
-        'cmbRecall
-        '
-        Me.cmbRecall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbRecall.FormattingEnabled = True
-        Me.cmbRecall.Location = New System.Drawing.Point(6, 22)
-        Me.cmbRecall.Name = "cmbRecall"
-        Me.cmbRecall.Size = New System.Drawing.Size(82, 23)
-        Me.cmbRecall.TabIndex = 16
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.btnInventoryDelete)
-        Me.GroupBox4.Controls.Add(Me.btnInventoryAdd)
-        Me.GroupBox4.Controls.Add(Me.cmbItems)
-        Me.GroupBox4.Location = New System.Drawing.Point(738, 19)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(128, 79)
-        Me.GroupBox4.TabIndex = 17
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Inventory Controls"
-        '
-        'btnInventoryDelete
-        '
-        Me.btnInventoryDelete.Enabled = False
-        Me.btnInventoryDelete.Location = New System.Drawing.Point(57, 51)
-        Me.btnInventoryDelete.Name = "btnInventoryDelete"
-        Me.btnInventoryDelete.Size = New System.Drawing.Size(63, 23)
-        Me.btnInventoryDelete.TabIndex = 14
-        Me.btnInventoryDelete.Text = "Delete"
-        Me.btnInventoryDelete.UseVisualStyleBackColor = True
-        '
-        'btnInventoryAdd
-        '
-        Me.btnInventoryAdd.Enabled = False
-        Me.btnInventoryAdd.Location = New System.Drawing.Point(6, 51)
-        Me.btnInventoryAdd.Name = "btnInventoryAdd"
-        Me.btnInventoryAdd.Size = New System.Drawing.Size(45, 23)
-        Me.btnInventoryAdd.TabIndex = 13
-        Me.btnInventoryAdd.Text = "Add"
-        Me.btnInventoryAdd.UseVisualStyleBackColor = True
-        '
-        'cmbItems
-        '
-        Me.cmbItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbItems.FormattingEnabled = True
-        Me.cmbItems.Location = New System.Drawing.Point(6, 22)
-        Me.cmbItems.Name = "cmbItems"
-        Me.cmbItems.Size = New System.Drawing.Size(114, 23)
-        Me.cmbItems.TabIndex = 12
-        '
-        'dummy
-        '
-        Me.dummy.AutoSize = True
-        Me.dummy.Location = New System.Drawing.Point(275, 36)
-        Me.dummy.Name = "dummy"
-        Me.dummy.Size = New System.Drawing.Size(68, 19)
-        Me.dummy.TabIndex = 4
-        Me.dummy.Text = "dummy"
-        Me.dummy.UseVisualStyleBackColor = True
-        '
-        'GroupBox12
-        '
-        Me.GroupBox12.Controls.Add(Me.CH064)
-        Me.GroupBox12.Controls.Add(Me.CH063)
-        Me.GroupBox12.Location = New System.Drawing.Point(126, 93)
-        Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(101, 100)
-        Me.GroupBox12.TabIndex = 5
-        Me.GroupBox12.TabStop = False
-        Me.GroupBox12.Text = "Scion Cave"
-        '
-        'CH063
-        '
-        Me.CH063.AutoSize = True
-        Me.CH063.Location = New System.Drawing.Point(6, 18)
-        Me.CH063.Name = "CH063"
-        Me.CH063.Size = New System.Drawing.Size(73, 19)
-        Me.CH063.TabIndex = 0
-        Me.CH063.Text = "Cola (L4)"
-        Me.CH063.UseVisualStyleBackColor = True
-        '
-        'CH064
-        '
-        Me.CH064.AutoSize = True
-        Me.CH064.Location = New System.Drawing.Point(6, 37)
-        Me.CH064.Name = "CH064"
-        Me.CH064.Size = New System.Drawing.Size(83, 19)
-        Me.CH064.TabIndex = 1
-        Me.CH064.Text = "Empty (L4)"
-        Me.CH064.UseVisualStyleBackColor = True
-        '
-        'GroupBox13
-        '
-        Me.GroupBox13.Controls.Add(Me.CH065)
-        Me.GroupBox13.Location = New System.Drawing.Point(126, 200)
-        Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(101, 100)
-        Me.GroupBox13.TabIndex = 6
-        Me.GroupBox13.TabStop = False
-        Me.GroupBox13.Text = "Naula Cave"
-        '
-        'CH065
-        '
-        Me.CH065.AutoSize = True
-        Me.CH065.Location = New System.Drawing.Point(6, 17)
-        Me.CH065.Name = "CH065"
-        Me.CH065.Size = New System.Drawing.Size(53, 19)
-        Me.CH065.TabIndex = 0
-        Me.CH065.Text = "Flash"
-        Me.CH065.UseVisualStyleBackColor = True
+        Me.GroupBox14.Location = New System.Drawing.Point(12, 236)
+        Me.GroupBox14.Name = "GroupBox14"
+        Me.GroupBox14.Size = New System.Drawing.Size(173, 86)
+        Me.GroupBox14.TabIndex = 2
+        Me.GroupBox14.TabStop = False
+        Me.GroupBox14.Text = "Casba Cave"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1243, 699)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -1294,6 +1314,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Meseta)
         Me.Controls.Add(Me.lstInventory)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.grpMotavia)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.chkFreeMode)
         Me.Controls.Add(Me.grpNoah)
@@ -1344,8 +1365,16 @@ Partial Class Form1
         CType(Me.NoahCurrentHP, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NoahLevel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.grpMotavia.ResumeLayout(False)
+        CType(Me.Meseta, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox13.ResumeLayout(False)
+        Me.GroupBox13.PerformLayout()
+        Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox12.PerformLayout()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
         Me.GroupBox10.ResumeLayout(False)
@@ -1354,13 +1383,6 @@ Partial Class Form1
         Me.GroupBox9.PerformLayout()
         Me.GroupBox8.ResumeLayout(False)
         Me.GroupBox8.PerformLayout()
-        CType(Me.Meseta, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
-        Me.GroupBox13.ResumeLayout(False)
-        Me.GroupBox13.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1450,28 +1472,30 @@ Partial Class Form1
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents cmbRecall As ComboBox
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents btnInventoryDelete As Button
-    Friend WithEvents btnInventoryAdd As Button
     Friend WithEvents cmbItems As ComboBox
     Friend WithEvents GroupBox7 As GroupBox
-    Friend WithEvents GroupBox6 As GroupBox
-    Friend WithEvents GroupBox5 As GroupBox
-    Friend WithEvents CH001 As CheckBox
-    Friend WithEvents CH002 As CheckBox
-    Friend WithEvents GroupBox8 As GroupBox
-    Friend WithEvents GroupBox10 As GroupBox
-    Friend WithEvents CH004 As CheckBox
-    Friend WithEvents GroupBox9 As GroupBox
-    Friend WithEvents CH003 As CheckBox
-    Friend WithEvents CH006 As CheckBox
-    Friend WithEvents CH005 As CheckBox
-    Friend WithEvents GroupBox11 As GroupBox
-    Friend WithEvents CH008 As CheckBox
-    Friend WithEvents CH007 As CheckBox
+    Friend WithEvents grpMotavia As GroupBox
     Friend WithEvents dummy As CheckBox
+    Friend WithEvents btnInventoryAdd As Button
+    Friend WithEvents btnInventoryDelete As Button
     Friend WithEvents GroupBox13 As GroupBox
     Friend WithEvents CH065 As CheckBox
     Friend WithEvents GroupBox12 As GroupBox
     Friend WithEvents CH064 As CheckBox
     Friend WithEvents CH063 As CheckBox
+    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents CH008 As CheckBox
+    Friend WithEvents CH007 As CheckBox
+    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents CH004 As CheckBox
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents CH003 As CheckBox
+    Friend WithEvents CH002 As CheckBox
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents CH006 As CheckBox
+    Friend WithEvents CH005 As CheckBox
+    Friend WithEvents CH001 As CheckBox
+    Friend WithEvents GroupBox14 As GroupBox
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents GroupBox5 As GroupBox
 End Class
