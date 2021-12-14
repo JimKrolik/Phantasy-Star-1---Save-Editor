@@ -6,7 +6,7 @@ Public Class Form1
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
 
         btnSave.Enabled = True
-        grpMotavia.Enabled = True
+        btnInventoryAdd.Enabled = True
         btnInventoryDelete.Enabled = True
 
         Dim currentSave As Integer = 0
@@ -166,7 +166,7 @@ Public Class Form1
         '### Chests ###
         '##############
 
-        For i = 0 To 64
+        For i = 0 To 82
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 checkChests(i, False)
             Else
@@ -439,6 +439,10 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Disable inventory buttons
+        btnInventoryAdd.Enabled = False
+        btnInventoryDelete.Enabled = False
+
     End Sub
 
 
@@ -567,25 +571,33 @@ Public Class Form1
         chest(62) = CH063           'Palma      Scion Cave      Cola (Level 4)
         chest(63) = CH064           'Palma      Scion Cave      Empty (Level 4)
         chest(64) = CH065           'Palma      Naula Cave      Flash
-        '
-        'chest(65) = CH66
-        'chest(66) = CH67
-        'chest(67) = CH68
-        'chest(68) = CH69
-        'chest(69) = CH70
-        'chest(70) = CH71
+        chest(65) = CH066           'Palma      Scion Cave      Flash (Level 4)
+        chest(66) = CH067           'Palma      Scion Cave      Burger (Level 4)
+        chest(67) = CH068           'Palma      Naula Cave      10 MST
+        chest(68) = CH069           'Palma      Scion Cave      50 MST
+        chest(69) = CH070           'Palma      Scion Cave      20 MST (level 4, near stairs)
+        chest(70) = CH071           'Palma      Scion Cave      20 MST (level 3, behind door)
+
         'chest(71) = CH72
-        'chest(72) = CH73
-        'chest(73) = CH74
+        chest(71) = dummy
+
+        chest(72) = CH073           'Palma      Scion Cave      Empty (level 2, between traps)
+        chest(73) = CH074           'Palma      Scion Cave      Cola (level 2)
+
         'chest(74) = CH75
-        'chest(75) = CH76
-        'chest(76) = CH77
-        'chest(77) = CH78
-        'chest(78) = CH79
-        'chest(79) = CH80
-        'chest(80) = CH81
-        'chest(81) = CH82
+        chest(74) = dummy
+
+        chest(75) = CH076           'Palma      Naula Cave      Short Sword
+        chest(76) = CH077           'Palma      Scion Cave      20 MST (level 2)
+        chest(77) = CH078           'Palma      Scion Cave      Empty (Level 2, near stairs)
+        chest(78) = CH079           'Palma      Scion Cave      Cola (Level 1)
+        chest(79) = CH080           'Palma      Scion Cave      20 MST (Level 1)
+        chest(80) = CH081           'Palma      Scion Cave      Empty (Level 1, near stairs)
+        chest(81) = CH082           'Palma      Scion Cave      Empty (Level 1, near entrance)
+
         'chest(82) = CH83
+        chest(82) = dummy
+
         'chest(83) = CH84
         'chest(84) = CH85
         'chest(85) = CH86
@@ -622,7 +634,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnInventoryAdd_Click_1(sender As Object, e As EventArgs) Handles btnInventoryAdd.Click
+    Private Sub btnInventoryAdd_Click(sender As Object, e As EventArgs) Handles btnInventoryAdd.Click
         lstInventory.Items.Add(Items.Name(cmbItems.SelectedIndex + 1)) 'Offset the 0 base
 
         'Disable Add button if the inventory is maxed out.
@@ -630,5 +642,6 @@ Public Class Form1
             btnInventoryAdd.Enabled = False
         End If
     End Sub
+
 
 End Class
