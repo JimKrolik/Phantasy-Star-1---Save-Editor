@@ -166,7 +166,7 @@ Public Class Form1
         '### Chests ###
         '##############
 
-        For i = 0 To 82
+        For i = 0 To 100
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 checkChests(i, False)
             Else
@@ -598,23 +598,26 @@ Public Class Form1
         'chest(82) = CH83
         chest(82) = dummy
 
-        'chest(83) = CH84
-        'chest(84) = CH85
-        'chest(85) = CH86
-        'chest(86) = CH87
-        'chest(87) = CH88
-        'chest(88) = CH89
-        'chest(89) = CH90
-        'chest(90) = CH91
-        'chest(91) = CH92
-        'chest(92) = CH93
-        'chest(93) = CH94
-        'chest(94) = CH95
-        'chest(95) = CH96
-        'chest(96) = CH97
-        'chest(97) = CH98
-        'chest(98) = CH99
-        'chest(99) = CH100
+        chest(83) = CH084           'Palma      Abion Island    100 MST
+        chest(84) = CH085           'Palma      Abion Island    Empty
+        chest(85) = CH086           'Palma      Abion Island    Flash
+        chest(86) = CH087           'Palma      Abion Island    Escaper
+
+        chest(87) = dummy
+        chest(88) = dummy
+        chest(89) = dummy
+        chest(90) = dummy
+        chest(91) = dummy
+        chest(92) = dummy
+        chest(93) = dummy
+        chest(94) = dummy
+        chest(95) = dummy
+        chest(96) = dummy
+        chest(97) = dummy
+        chest(98) = dummy
+        chest(99) = dummy
+        chest(100) = dummy
+
 
         chest(checkBoxNum).Checked = isItChecked
 
