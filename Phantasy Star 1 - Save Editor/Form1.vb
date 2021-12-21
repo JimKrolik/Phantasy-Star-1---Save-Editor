@@ -602,8 +602,9 @@ Public Class Form1
         chest(84) = CH085           'Palma      Abion Island    Empty
         chest(85) = CH086           'Palma      Abion Island    Flash
         chest(86) = CH087           'Palma      Abion Island    Escaper
+        chest(87) = CH088           'Palma      Forgotten Tower 20 MST (Level 1)
 
-        chest(87) = dummy
+
         chest(88) = dummy
         chest(89) = dummy
         chest(90) = dummy
