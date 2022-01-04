@@ -166,7 +166,7 @@ Public Class Form1
         '### Chests ###
         '##############
 
-        For i = 0 To 100
+        For i = 0 To 108
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 checkChests(i, False)
             Else
@@ -514,60 +514,7 @@ Public Class Form1
         chest(60) = dummy
         chest(61) = dummy
         chest(62) = dummy
-        'chest(8) = CH009
-        'chest(9) = CH0010
-        'chest(10) = CH011
-        'chest(11) = CH012
-        'chest(12) = CH013
-        'chest(13) = CH014
-        'chest(14) = CH015
-        'chest(15) = CH016
-        'chest(16) = CH017
-        'chest(17) = CH018
-        'chest(18) = CH019
-        'chest(19) = CH020
-        'chest(20) = CH021
-        'chest(21) = CH022
-        'chest(22) = CH023
-        'chest(23) = CH024
-        'chest(24) = CH025
-        'chest(25) = CH026
-        'chest(26) = CH027
-        'chest(27) = CH028
-        'chest(28) = CH029
-        'chest(29) = CH030
-        'chest(30) = CH031
-        'chest(31) = CH032
-        'chest(32) = CH033
-        'chest(33) = CH034
-        'chest(34) = CH035
-        'chest(35) = CH036
-        'chest(36) = CH037
-        'chest(37) = CH038
-        'chest(38) = CH039
-        'chest(39) = CH040
-        'chest(40) = CH041
-        'chest(41) = CH042
-        'chest(42) = CH043
-        'chest(43) = CH044
-        'chest(44) = CH045
-        'chest(45) = CH046
-        'chest(46) = CH047
-        'chest(47) = CH048
-        'chest(48) = CH049
-        'chest(49) = CH050
-        'chest(50) = CH051
-        'chest(51) = CH052
-        'chest(52) = CH053
-        'chest(53) = CH054
-        'chest(54) = CH055
-        'chest(55) = CH056
-        'chest(56) = CH057
-        'chest(57) = CH058
-        'chest(58) = CH059
-        'chest(59) = CH060
-        'chest(60) = CH061
-        'chest(61) = CH62
+
         chest(62) = CH063           'Palma      Scion Cave      Cola (Level 4)
         chest(63) = CH064           'Palma      Scion Cave      Empty (Level 4)
         chest(64) = CH065           'Palma      Naula Cave      Flash
@@ -602,24 +549,33 @@ Public Class Form1
         chest(84) = CH085           'Palma      Abion Island    Empty
         chest(85) = CH086           'Palma      Abion Island    Flash
         chest(86) = CH087           'Palma      Abion Island    Escaper
-        chest(87) = CH088           'Palma      Forgotten Tower 20 MST (Level 1)
-
+        chest(87) = CH088           'Palma      Forgotten Tower     20 MST (Level 1)
 
         chest(88) = dummy
-        chest(89) = dummy
-        chest(90) = dummy
-        chest(91) = dummy
-        chest(92) = dummy
-        chest(93) = dummy
-        chest(94) = dummy
-        chest(95) = dummy
-        chest(96) = dummy
-        chest(97) = dummy
-        chest(98) = dummy
-        chest(99) = dummy
-        chest(100) = dummy
 
+        chest(89) = CH090           'Palma      Forgotten Tower     Empty (Level 2)
+        chest(90) = CH091           'Palma      Forgotten Tower     Burger (Level 3 - East Side)
+        chest(91) = CH092           'Palma      Forgotten Tower     Trap (Level 3 - East Side)
+        chest(92) = CH093           'Palma      Forgotten Tower     100 MST (Level 3)
+        chest(93) = CH094           'Palma      Forgotten Tower     1 MST (Level 3)
+        chest(94) = CH095           'Palma      Forgotten Tower     Burger (Level 3 - West side)
+        chest(95) = CH096           'Palma      Forgotten Tower     Empty (Level 3 - West side)
+        chest(96) = CH097           'Palma      Forgotten Tower     Trap (Level 4)
+        chest(97) = CH098           'Palma      Forgotten Tower     20 MST (Level 4)
+        chest(98) = CH099           'Palma      Forgotten Tower     Burger (Level 4)
+        chest(99) = CH100           'Palma      Forgotten Tower     Empty (Level 4)
+        chest(100) = CH101          'Palma      Forgotten Tower     Burger (Level 5)
 
+        chest(101) = CH102          'Motavia    Noah Cave       2000 MST
+        chest(102) = CH103          'Motavia    Noah Cave       Flash (Level 2 - NW Corner)
+        chest(103) = CH104          'Motavia    Noah Cave       Burger (Level 2 - SW Corner)
+        chest(104) = CH105          'Motavia    Noah Cave       Burger (Level 2 - S)
+        chest(105) = CH106          'Motavia    Noah Cave       Flash (Level 2 - N)
+        chest(106) = CH107          'Motavia    Noah Cave       50 MST
+        chest(107) = CH108          'Motavia    Noah Cave       Cola (Level 1)
+        chest(108) = CH109          'Motavia    Noah Cave       20 MST
+
+        'Re-call the function to visually check the box if the flag is active.
         chest(checkBoxNum).Checked = isItChecked
 
     End Sub
