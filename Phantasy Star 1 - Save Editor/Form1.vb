@@ -166,7 +166,7 @@ Public Class Form1
         '### Chests ###
         '##############
 
-        For i = 0 To 108
+        For i = 0 To 112
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 checkChests(i, False)
             Else
@@ -445,8 +445,6 @@ Public Class Form1
 
     End Sub
 
-
-
     Public Sub checkChests(checkBoxNum As Integer, isItChecked As Boolean)
         'Map our checkboxes into an array 
         Dim chest(200) As CheckBox
@@ -459,6 +457,7 @@ Public Class Form1
         chest(5) = CH006            'Palma      Camineet            50 MST
         chest(6) = CH007            'Palma      Dr. Mad Cave        30 MST
         chest(7) = CH008            'Palma      Dr. Mad Cave        20 MST
+
         chest(8) = dummy
         chest(9) = dummy
         chest(10) = dummy
@@ -549,23 +548,22 @@ Public Class Form1
         chest(84) = CH085           'Palma      Abion Island    Empty
         chest(85) = CH086           'Palma      Abion Island    Flash
         chest(86) = CH087           'Palma      Abion Island    Escaper
-        chest(87) = CH088           'Palma      Forgotten Tower     20 MST (Level 1)
+        chest(87) = CH088           'Palma      Island Tower    20 MST (Level 1)
 
         chest(88) = dummy
 
-        chest(89) = CH090           'Palma      Forgotten Tower     Empty (Level 2)
-        chest(90) = CH091           'Palma      Forgotten Tower     Burger (Level 3 - East Side)
-        chest(91) = CH092           'Palma      Forgotten Tower     Trap (Level 3 - East Side)
-        chest(92) = CH093           'Palma      Forgotten Tower     100 MST (Level 3)
-        chest(93) = CH094           'Palma      Forgotten Tower     1 MST (Level 3)
-        chest(94) = CH095           'Palma      Forgotten Tower     Burger (Level 3 - West side)
-        chest(95) = CH096           'Palma      Forgotten Tower     Empty (Level 3 - West side)
-        chest(96) = CH097           'Palma      Forgotten Tower     Trap (Level 4)
-        chest(97) = CH098           'Palma      Forgotten Tower     20 MST (Level 4)
-        chest(98) = CH099           'Palma      Forgotten Tower     Burger (Level 4)
-        chest(99) = CH100           'Palma      Forgotten Tower     Empty (Level 4)
-        chest(100) = CH101          'Palma      Forgotten Tower     Burger (Level 5)
-
+        chest(89) = CH090           'Palma      Island Tower    Empty (Level 2)
+        chest(90) = CH091           'Palma      Island Tower    Burger (Level 3 - East Side)
+        chest(91) = CH092           'Palma      Island Tower    Trap (Level 3 - East Side)
+        chest(92) = CH093           'Palma      Island Tower    100 MST (Level 3)
+        chest(93) = CH094           'Palma      Island Tower    1 MST (Level 3)
+        chest(94) = CH095           'Palma      Island Tower    Burger (Level 3 - West side)
+        chest(95) = CH096           'Palma      Island Tower    Empty (Level 3 - West side)
+        chest(96) = CH097           'Palma      Island Tower    Trap (Level 4)
+        chest(97) = CH098           'Palma      Island Tower    20 MST (Level 4)
+        chest(98) = CH099           'Palma      Island Tower    Burger (Level 4)
+        chest(99) = CH100           'Palma      Island Tower    Empty (Level 4)
+        chest(100) = CH101          'Palma      Island Tower    Burger (Level 5)
         chest(101) = CH102          'Motavia    Noah Cave       2000 MST
         chest(102) = CH103          'Motavia    Noah Cave       Flash (Level 2 - NW Corner)
         chest(103) = CH104          'Motavia    Noah Cave       Burger (Level 2 - SW Corner)
@@ -574,6 +572,12 @@ Public Class Form1
         chest(106) = CH107          'Motavia    Noah Cave       50 MST
         chest(107) = CH108          'Motavia    Noah Cave       Cola (Level 1)
         chest(108) = CH109          'Motavia    Noah Cave       20 MST
+        chest(109) = CH110          'Motavia    Tajima Cave     500 MST (Level 3 - NW Corner)
+        chest(110) = CH111          'Motavia    Tajima Cave     Empty (Level 3, E)
+        chest(111) = CH112          'Motavia    Tajima Cave     Empty (Level 3, W)
+        chest(112) = CH113          'Motavia    Tajima Cave     Titan Sword
+        chest(113) = CH114          'Motavia    Tajima Cave     Empty (Level 3, SE Corner)
+
 
         'Re-call the function to visually check the box if the flag is active.
         chest(checkBoxNum).Checked = isItChecked

@@ -19,8 +19,8 @@ Public Class Items
     "Heat Gun",         '0B
     "Light Saber",      '0C
     "Laser Gun",        '0D
-    "Laconia Sword",   '0E
-    "Laconia Axe",     '0F
+    "Laconia Sword",    '0E
+    "Laconia Axe",      '0F
     "Leather Armor",    '10
     "White Mantle",     '11
     "Light Suit",       '12
@@ -67,7 +67,7 @@ Public Class Items
     "Gas Shield",       '3B
     "Crystal",          '3C
     "M System (Unused)",'3D
-    "Miracle Key",       '3E
+    "Miracle Key",      '3E
     ""
     }
 
