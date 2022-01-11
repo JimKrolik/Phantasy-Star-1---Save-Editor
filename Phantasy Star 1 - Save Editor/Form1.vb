@@ -166,7 +166,7 @@ Public Class Form1
         '### Chests ###
         '##############
 
-        For i = 0 To 112
+        For i = 0 To 127
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 checkChests(i, False)
             Else
@@ -577,7 +577,22 @@ Public Class Form1
         chest(111) = CH112          'Motavia    Tajima Cave     Empty (Level 3, W)
         chest(112) = CH113          'Motavia    Tajima Cave     Titan Sword
         chest(113) = CH114          'Motavia    Tajima Cave     Empty (Level 3, SE Corner)
+        chest(114) = CH115          'Motavia    Tajima Cave     500 MST (Level 3 - South)
+        chest(115) = CH116          'Motavia    Tajima Cave     Flash (Level 2)
+        chest(116) = CH117          'Motavia    Tajima Cave     Empty (Level 2)
+        chest(117) = CH118          'Motavia    Tajima Cave     Burger (Level 2)
+        chest(118) = CH119          'Motavia    Tajima Cave     3000 MST
+        chest(119) = CH120          'Motavia    Tajima Cave     White Mantle
+        chest(120) = CH121          'Motavia    Tajima Cave     Wood Cane
+        chest(121) = CH122          'Motavia    Tajima Cave     Cola
+        chest(122) = CH123          'Motavia    Casba Cave      100 MST (West)
+        chest(123) = CH124          'Motavia    Casba Cave      Empty
+        chest(124) = CH125          'Motavia    Casba Cave      100 MST (East)
 
+        chest(125) = dummy
+        chest(126) = dummy
+
+        chest(127) = CH128          'Dezolis    Skure           500 MST
 
         'Re-call the function to visually check the box if the flag is active.
         chest(checkBoxNum).Checked = isItChecked
@@ -606,6 +621,5 @@ Public Class Form1
             btnInventoryAdd.Enabled = False
         End If
     End Sub
-
 
 End Class
