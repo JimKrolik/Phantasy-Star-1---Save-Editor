@@ -100,8 +100,10 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox19 = New System.Windows.Forms.GroupBox()
+        Me.CH014 = New System.Windows.Forms.CheckBox()
+        Me.CH015 = New System.Windows.Forms.CheckBox()
+        Me.CH011 = New System.Windows.Forms.CheckBox()
         Me.CH012 = New System.Windows.Forms.CheckBox()
-        Me.CH019 = New System.Windows.Forms.CheckBox()
         Me.CH017 = New System.Windows.Forms.CheckBox()
         Me.CH016 = New System.Windows.Forms.CheckBox()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
@@ -201,6 +203,9 @@ Partial Class Form1
         Me.btnInventoryDelete = New System.Windows.Forms.Button()
         Me.cmbItems = New System.Windows.Forms.ComboBox()
         Me.btnInventoryAdd = New System.Windows.Forms.Button()
+        Me.CH010 = New System.Windows.Forms.CheckBox()
+        Me.CH019 = New System.Windows.Forms.CheckBox()
+        Me.CH009 = New System.Windows.Forms.CheckBox()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1055,6 +1060,11 @@ Partial Class Form1
         '
         'GroupBox19
         '
+        Me.GroupBox19.Controls.Add(Me.CH009)
+        Me.GroupBox19.Controls.Add(Me.CH010)
+        Me.GroupBox19.Controls.Add(Me.CH014)
+        Me.GroupBox19.Controls.Add(Me.CH015)
+        Me.GroupBox19.Controls.Add(Me.CH011)
         Me.GroupBox19.Controls.Add(Me.CH012)
         Me.GroupBox19.Controls.Add(Me.CH019)
         Me.GroupBox19.Controls.Add(Me.CH017)
@@ -1066,25 +1076,45 @@ Partial Class Form1
         Me.GroupBox19.TabStop = False
         Me.GroupBox19.Text = "Medusa Tower"
         '
+        'CH014
+        '
+        Me.CH014.AutoSize = True
+        Me.CH014.Location = New System.Drawing.Point(97, 23)
+        Me.CH014.Name = "CH014"
+        Me.CH014.Size = New System.Drawing.Size(89, 19)
+        Me.CH014.TabIndex = 6
+        Me.CH014.Text = "Escaper (L0)"
+        Me.CH014.UseVisualStyleBackColor = True
+        '
+        'CH015
+        '
+        Me.CH015.AutoSize = True
+        Me.CH015.Location = New System.Drawing.Point(7, 108)
+        Me.CH015.Name = "CH015"
+        Me.CH015.Size = New System.Drawing.Size(76, 19)
+        Me.CH015.TabIndex = 5
+        Me.CH015.Text = "Flash (L0)"
+        Me.CH015.UseVisualStyleBackColor = True
+        '
+        'CH011
+        '
+        Me.CH011.AutoSize = True
+        Me.CH011.Location = New System.Drawing.Point(7, 91)
+        Me.CH011.Name = "CH011"
+        Me.CH011.Size = New System.Drawing.Size(87, 19)
+        Me.CH011.TabIndex = 4
+        Me.CH011.Text = "10 MST (L0)"
+        Me.CH011.UseVisualStyleBackColor = True
+        '
         'CH012
         '
         Me.CH012.AutoSize = True
-        Me.CH012.Location = New System.Drawing.Point(5, 82)
+        Me.CH012.Location = New System.Drawing.Point(7, 74)
         Me.CH012.Name = "CH012"
         Me.CH012.Size = New System.Drawing.Size(96, 19)
         Me.CH012.TabIndex = 3
         Me.CH012.Text = "Burger (L0, S)"
         Me.CH012.UseVisualStyleBackColor = True
-        '
-        'CH019
-        '
-        Me.CH019.AutoSize = True
-        Me.CH019.Location = New System.Drawing.Point(7, 57)
-        Me.CH019.Name = "CH019"
-        Me.CH019.Size = New System.Drawing.Size(83, 19)
-        Me.CH019.TabIndex = 2
-        Me.CH019.Text = "Empty (L1)"
-        Me.CH019.UseVisualStyleBackColor = True
         '
         'CH017
         '
@@ -2131,6 +2161,36 @@ Partial Class Form1
         Me.btnInventoryAdd.Text = "Add"
         Me.btnInventoryAdd.UseVisualStyleBackColor = True
         '
+        'CH010
+        '
+        Me.CH010.AutoSize = True
+        Me.CH010.Location = New System.Drawing.Point(97, 40)
+        Me.CH010.Name = "CH010"
+        Me.CH010.Size = New System.Drawing.Size(96, 19)
+        Me.CH010.TabIndex = 7
+        Me.CH010.Text = "Burger (L0, E)"
+        Me.CH010.UseVisualStyleBackColor = True
+        '
+        'CH019
+        '
+        Me.CH019.AutoSize = True
+        Me.CH019.Location = New System.Drawing.Point(7, 57)
+        Me.CH019.Name = "CH019"
+        Me.CH019.Size = New System.Drawing.Size(83, 19)
+        Me.CH019.TabIndex = 2
+        Me.CH019.Text = "Empty (L1)"
+        Me.CH019.UseVisualStyleBackColor = True
+        '
+        'CH009
+        '
+        Me.CH009.AutoSize = True
+        Me.CH009.Location = New System.Drawing.Point(97, 57)
+        Me.CH009.Name = "CH009"
+        Me.CH009.Size = New System.Drawing.Size(83, 19)
+        Me.CH009.TabIndex = 8
+        Me.CH009.Text = "Empty (L0)"
+        Me.CH009.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -2411,7 +2471,12 @@ Partial Class Form1
     Friend WithEvents CH128 As CheckBox
     Friend WithEvents GroupBox19 As GroupBox
     Friend WithEvents CH016 As CheckBox
-    Friend WithEvents CH019 As CheckBox
     Friend WithEvents CH017 As CheckBox
     Friend WithEvents CH012 As CheckBox
+    Friend WithEvents CH011 As CheckBox
+    Friend WithEvents CH015 As CheckBox
+    Friend WithEvents CH014 As CheckBox
+    Friend WithEvents CH010 As CheckBox
+    Friend WithEvents CH009 As CheckBox
+    Friend WithEvents CH019 As CheckBox
 End Class

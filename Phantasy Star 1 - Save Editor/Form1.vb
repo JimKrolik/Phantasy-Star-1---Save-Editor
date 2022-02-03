@@ -457,18 +457,17 @@ Public Class Form1
         chest(5) = CH006            'Palma      Camineet            50 MST
         chest(6) = CH007            'Palma      Dr. Mad Cave        30 MST
         chest(7) = CH008            'Palma      Dr. Mad Cave        20 MST
-
-        chest(8) = dummy
-        chest(9) = dummy
-        chest(10) = dummy
-        chest(11) = CH012           'Palma      Medusa Tower       Burger, Basement, South
+        chest(8) = CH009            'Palma      Medusa Tower        Empty (L0)
+        chest(9) = CH010            'Palma      Medusa Tower        Burger (L0, E)
+        chest(10) = CH011           'Palma      Medusa Tower        10 MST (L0)
+        chest(11) = CH012           'Palma      Medusa Tower        Burger, Basement, South
         chest(12) = dummy
-        chest(13) = dummy
-        chest(14) = dummy
-        chest(15) = CH016           'Palma      Medusa Tower       20 MST
-        chest(16) = CH017           'Palma      Medusa Tower       Cola (L1) 
+        chest(13) = CH014           'Palma      Medusa Tower        Escaper (L0)
+        chest(14) = CH015           'Palma      Medusa Tower        Flash (L0)
+        chest(15) = CH016           'Palma      Medusa Tower        20 MST
+        chest(16) = CH017           'Palma      Medusa Tower        Cola (L1) 
         chest(17) = dummy
-        chest(18) = CH019           'Palma      Mesusa Tower       Empty (L1)
+        chest(18) = CH019           'Palma      Mesusa Tower        Empty (L1)
         chest(19) = dummy
         chest(20) = dummy
         chest(21) = dummy
