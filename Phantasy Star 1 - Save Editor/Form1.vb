@@ -168,10 +168,26 @@ Public Class Form1
 
         For i = 0 To 127
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
-                checkChests(i, False)
+                Game.checkChests(i, False)
             Else
-                checkChests(i, True)
+                Game.checkChests(i, True)
             End If
+        Next
+
+        '######################
+        '### Dungeon Layout ###
+        '######################
+
+        Dim dungeonID As Integer = 0
+        Dim myChar As Char
+
+
+
+        For i = 0 To 16
+
+            myChar = Game.DungeonLayout(dungeonID).Chars(i)
+            Game.loadDungeonLayout(i, myChar)
+
 
         Next
 
@@ -426,8 +442,6 @@ Public Class Form1
         End If
 
 
-
-
         file.Dispose()
         file.Close()
 
@@ -445,158 +459,7 @@ Public Class Form1
 
     End Sub
 
-    Public Sub checkChests(checkBoxNum As Integer, isItChecked As Boolean)
-        'Map our checkboxes into an array 
-        Dim chest(200) As CheckBox
 
-        chest(0) = CH001            'Palma      Camineet            Compass
-        chest(1) = CH002            'Palma      Medusa Cave         --need to check    
-        chest(2) = CH003            'Palma      Medusa Cave         --need to check
-        chest(3) = CH004            'Palma      Dr. Luveno Cave     Empty
-        chest(4) = CH005            'Palma      Camineet            Dungeon Key
-        chest(5) = CH006            'Palma      Camineet            50 MST
-        chest(6) = CH007            'Palma      Dr. Mad Cave        30 MST
-        chest(7) = CH008            'Palma      Dr. Mad Cave        20 MST
-        chest(8) = CH009            'Palma      Medusa Tower        Empty (L0)
-        chest(9) = CH010            'Palma      Medusa Tower        Burger (L0, E)
-        chest(10) = CH011           'Palma      Medusa Tower        10 MST (L0)
-        chest(11) = CH012           'Palma      Medusa Tower        Burger, Basement, South
-        chest(12) = dummy
-        chest(13) = CH014           'Palma      Medusa Tower        Escaper (L0)
-        chest(14) = CH015           'Palma      Medusa Tower        Flash (L0)
-        chest(15) = CH016           'Palma      Medusa Tower        20 MST
-        chest(16) = CH017           'Palma      Medusa Tower        Cola (L1) 
-        chest(17) = dummy
-        chest(18) = CH019           'Palma      Mesusa Tower        Empty (L1)
-        chest(19) = dummy
-        chest(20) = dummy
-        chest(21) = dummy
-        chest(22) = dummy
-        chest(23) = dummy
-        chest(24) = dummy
-        chest(25) = dummy
-        chest(26) = dummy
-        chest(27) = dummy
-        chest(28) = dummy
-        chest(29) = dummy
-        chest(30) = dummy
-        chest(31) = dummy
-        chest(32) = dummy
-        chest(33) = dummy
-        chest(34) = dummy
-        chest(35) = dummy
-        chest(36) = dummy
-        chest(37) = dummy
-        chest(38) = dummy
-        chest(39) = dummy
-        chest(40) = dummy
-        chest(41) = dummy
-        chest(42) = dummy
-        chest(43) = dummy
-        chest(44) = dummy
-        chest(45) = dummy
-        chest(46) = dummy
-        chest(47) = dummy
-        chest(48) = dummy
-        chest(49) = dummy
-        chest(50) = dummy
-        chest(51) = dummy
-        chest(52) = dummy
-        chest(53) = dummy
-        chest(54) = dummy
-        chest(55) = dummy
-        chest(56) = dummy
-        chest(57) = dummy
-        chest(58) = dummy
-        chest(59) = dummy
-        chest(60) = dummy
-        chest(61) = dummy
-        chest(62) = dummy
-
-        chest(62) = CH063           'Palma      Scion Cave      Cola (Level 4)
-        chest(63) = CH064           'Palma      Scion Cave      Empty (Level 4)
-        chest(64) = CH065           'Palma      Naula Cave      Flash
-        chest(65) = CH066           'Palma      Scion Cave      Flash (Level 4)
-        chest(66) = CH067           'Palma      Scion Cave      Burger (Level 4)
-        chest(67) = CH068           'Palma      Naula Cave      10 MST
-        chest(68) = CH069           'Palma      Scion Cave      50 MST
-        chest(69) = CH070           'Palma      Scion Cave      20 MST (level 4, near stairs)
-        chest(70) = CH071           'Palma      Scion Cave      20 MST (level 3, behind door)
-
-        'chest(71) = CH72
-        chest(71) = dummy
-
-        chest(72) = CH073           'Palma      Scion Cave      Empty (level 2, between traps)
-        chest(73) = CH074           'Palma      Scion Cave      Cola (level 2)
-
-        'chest(74) = CH75
-        chest(74) = dummy
-
-        chest(75) = CH076           'Palma      Naula Cave      Short Sword
-        chest(76) = CH077           'Palma      Scion Cave      20 MST (level 2)
-        chest(77) = CH078           'Palma      Scion Cave      Empty (Level 2, near stairs)
-        chest(78) = CH079           'Palma      Scion Cave      Cola (Level 1)
-        chest(79) = CH080           'Palma      Scion Cave      20 MST (Level 1)
-        chest(80) = CH081           'Palma      Scion Cave      Empty (Level 1, near stairs)
-        chest(81) = CH082           'Palma      Scion Cave      Empty (Level 1, near entrance)
-
-        'chest(82) = CH83
-        chest(82) = dummy
-
-        chest(83) = CH084           'Palma      Abion Island    100 MST
-        chest(84) = CH085           'Palma      Abion Island    Empty
-        chest(85) = CH086           'Palma      Abion Island    Flash
-        chest(86) = CH087           'Palma      Abion Island    Escaper
-        chest(87) = CH088           'Palma      Island Tower    20 MST (Level 1)
-
-        chest(88) = dummy
-
-        chest(89) = CH090           'Palma      Island Tower    Empty (Level 2)
-        chest(90) = CH091           'Palma      Island Tower    Burger (Level 3 - East Side)
-        chest(91) = CH092           'Palma      Island Tower    Trap (Level 3 - East Side)
-        chest(92) = CH093           'Palma      Island Tower    100 MST (Level 3)
-        chest(93) = CH094           'Palma      Island Tower    1 MST (Level 3)
-        chest(94) = CH095           'Palma      Island Tower    Burger (Level 3 - West side)
-        chest(95) = CH096           'Palma      Island Tower    Empty (Level 3 - West side)
-        chest(96) = CH097           'Palma      Island Tower    Trap (Level 4)
-        chest(97) = CH098           'Palma      Island Tower    20 MST (Level 4)
-        chest(98) = CH099           'Palma      Island Tower    Burger (Level 4)
-        chest(99) = CH100           'Palma      Island Tower    Empty (Level 4)
-        chest(100) = CH101          'Palma      Island Tower    Burger (Level 5)
-        chest(101) = CH102          'Motavia    Noah Cave       2000 MST
-        chest(102) = CH103          'Motavia    Noah Cave       Flash (Level 2 - NW Corner)
-        chest(103) = CH104          'Motavia    Noah Cave       Burger (Level 2 - SW Corner)
-        chest(104) = CH105          'Motavia    Noah Cave       Burger (Level 2 - S)
-        chest(105) = CH106          'Motavia    Noah Cave       Flash (Level 2 - N)
-        chest(106) = CH107          'Motavia    Noah Cave       50 MST
-        chest(107) = CH108          'Motavia    Noah Cave       Cola (Level 1)
-        chest(108) = CH109          'Motavia    Noah Cave       20 MST
-        chest(109) = CH110          'Motavia    Tajima Cave     500 MST (Level 3 - NW Corner)
-        chest(110) = CH111          'Motavia    Tajima Cave     Empty (Level 3, E)
-        chest(111) = CH112          'Motavia    Tajima Cave     Empty (Level 3, W)
-        chest(112) = CH113          'Motavia    Tajima Cave     Titan Sword
-        chest(113) = CH114          'Motavia    Tajima Cave     Empty (Level 3, SE Corner)
-        chest(114) = CH115          'Motavia    Tajima Cave     500 MST (Level 3 - South)
-        chest(115) = CH116          'Motavia    Tajima Cave     Flash (Level 2)
-        chest(116) = CH117          'Motavia    Tajima Cave     Empty (Level 2)
-        chest(117) = CH118          'Motavia    Tajima Cave     Burger (Level 2)
-        chest(118) = CH119          'Motavia    Tajima Cave     3000 MST
-        chest(119) = CH120          'Motavia    Tajima Cave     White Mantle
-        chest(120) = CH121          'Motavia    Tajima Cave     Wood Cane
-        chest(121) = CH122          'Motavia    Tajima Cave     Cola
-        chest(122) = CH123          'Motavia    Casba Cave      100 MST (West)
-        chest(123) = CH124          'Motavia    Casba Cave      Empty
-        chest(124) = CH125          'Motavia    Casba Cave      100 MST (East)
-
-        chest(125) = dummy
-        chest(126) = dummy
-
-        chest(127) = CH128          'Dezolis    Skure           500 MST
-
-        'Re-call the function to visually check the box if the flag is active.
-        chest(checkBoxNum).Checked = isItChecked
-
-    End Sub
 
     Private Sub btnInventoryDelete_Click(sender As Object, e As EventArgs) Handles btnInventoryDelete.Click
         lstInventory.Items.Remove(lstInventory.SelectedItem)
@@ -620,5 +483,6 @@ Public Class Form1
             btnInventoryAdd.Enabled = False
         End If
     End Sub
+
 
 End Class

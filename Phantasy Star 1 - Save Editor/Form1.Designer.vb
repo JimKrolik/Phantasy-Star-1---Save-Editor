@@ -100,10 +100,16 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox19 = New System.Windows.Forms.GroupBox()
+        Me.CH026 = New System.Windows.Forms.CheckBox()
+        Me.CH021 = New System.Windows.Forms.CheckBox()
+        Me.CH020 = New System.Windows.Forms.CheckBox()
+        Me.CH009 = New System.Windows.Forms.CheckBox()
+        Me.CH010 = New System.Windows.Forms.CheckBox()
         Me.CH014 = New System.Windows.Forms.CheckBox()
         Me.CH015 = New System.Windows.Forms.CheckBox()
         Me.CH011 = New System.Windows.Forms.CheckBox()
         Me.CH012 = New System.Windows.Forms.CheckBox()
+        Me.CH019 = New System.Windows.Forms.CheckBox()
         Me.CH017 = New System.Windows.Forms.CheckBox()
         Me.CH016 = New System.Windows.Forms.CheckBox()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
@@ -203,9 +209,26 @@ Partial Class Form1
         Me.btnInventoryDelete = New System.Windows.Forms.Button()
         Me.cmbItems = New System.Windows.Forms.ComboBox()
         Me.btnInventoryAdd = New System.Windows.Forms.Button()
-        Me.CH010 = New System.Windows.Forms.CheckBox()
-        Me.CH019 = New System.Windows.Forms.CheckBox()
-        Me.CH009 = New System.Windows.Forms.CheckBox()
+        Me.grpDungeon = New System.Windows.Forms.GroupBox()
+        Me.btnDungeon15 = New System.Windows.Forms.Button()
+        Me.btnDungeon14 = New System.Windows.Forms.Button()
+        Me.btnDungeon13 = New System.Windows.Forms.Button()
+        Me.btnDungeon12 = New System.Windows.Forms.Button()
+        Me.btnDungeon11 = New System.Windows.Forms.Button()
+        Me.btnDungeon10 = New System.Windows.Forms.Button()
+        Me.btnDungeon9 = New System.Windows.Forms.Button()
+        Me.btnDungeon8 = New System.Windows.Forms.Button()
+        Me.btnDungeon7 = New System.Windows.Forms.Button()
+        Me.btnDungeon0 = New System.Windows.Forms.Button()
+        Me.btnDungeon6 = New System.Windows.Forms.Button()
+        Me.btnDungeon5 = New System.Windows.Forms.Button()
+        Me.btnDungeon4 = New System.Windows.Forms.Button()
+        Me.btnDungeon3 = New System.Windows.Forms.Button()
+        Me.btnDungeon2 = New System.Windows.Forms.Button()
+        Me.btnDungeon1 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.btnDungeon16 = New System.Windows.Forms.Button()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -262,6 +285,7 @@ Partial Class Form1
         CType(Me.Meseta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.grpDungeon.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLoad
@@ -1060,6 +1084,9 @@ Partial Class Form1
         '
         'GroupBox19
         '
+        Me.GroupBox19.Controls.Add(Me.CH026)
+        Me.GroupBox19.Controls.Add(Me.CH021)
+        Me.GroupBox19.Controls.Add(Me.CH020)
         Me.GroupBox19.Controls.Add(Me.CH009)
         Me.GroupBox19.Controls.Add(Me.CH010)
         Me.GroupBox19.Controls.Add(Me.CH014)
@@ -1069,17 +1096,67 @@ Partial Class Form1
         Me.GroupBox19.Controls.Add(Me.CH019)
         Me.GroupBox19.Controls.Add(Me.CH017)
         Me.GroupBox19.Controls.Add(Me.CH016)
-        Me.GroupBox19.Location = New System.Drawing.Point(12, 334)
+        Me.GroupBox19.Location = New System.Drawing.Point(17, 334)
         Me.GroupBox19.Name = "GroupBox19"
-        Me.GroupBox19.Size = New System.Drawing.Size(215, 133)
+        Me.GroupBox19.Size = New System.Drawing.Size(231, 133)
         Me.GroupBox19.TabIndex = 15
         Me.GroupBox19.TabStop = False
         Me.GroupBox19.Text = "Medusa Tower"
         '
+        'CH026
+        '
+        Me.CH026.AutoSize = True
+        Me.CH026.Location = New System.Drawing.Point(102, 108)
+        Me.CH026.Name = "CH026"
+        Me.CH026.Size = New System.Drawing.Size(87, 19)
+        Me.CH026.TabIndex = 11
+        Me.CH026.Text = "35 MST (L3)"
+        Me.CH026.UseVisualStyleBackColor = True
+        '
+        'CH021
+        '
+        Me.CH021.AutoSize = True
+        Me.CH021.Location = New System.Drawing.Point(102, 91)
+        Me.CH021.Name = "CH021"
+        Me.CH021.Size = New System.Drawing.Size(81, 19)
+        Me.CH021.TabIndex = 10
+        Me.CH021.Text = "5 MST (L2)"
+        Me.CH021.UseVisualStyleBackColor = True
+        '
+        'CH020
+        '
+        Me.CH020.AutoSize = True
+        Me.CH020.Location = New System.Drawing.Point(102, 74)
+        Me.CH020.Name = "CH020"
+        Me.CH020.Size = New System.Drawing.Size(87, 19)
+        Me.CH020.TabIndex = 9
+        Me.CH020.Text = "10 MST (L2)"
+        Me.CH020.UseVisualStyleBackColor = True
+        '
+        'CH009
+        '
+        Me.CH009.AutoSize = True
+        Me.CH009.Location = New System.Drawing.Point(102, 57)
+        Me.CH009.Name = "CH009"
+        Me.CH009.Size = New System.Drawing.Size(83, 19)
+        Me.CH009.TabIndex = 8
+        Me.CH009.Text = "Empty (L0)"
+        Me.CH009.UseVisualStyleBackColor = True
+        '
+        'CH010
+        '
+        Me.CH010.AutoSize = True
+        Me.CH010.Location = New System.Drawing.Point(102, 40)
+        Me.CH010.Name = "CH010"
+        Me.CH010.Size = New System.Drawing.Size(96, 19)
+        Me.CH010.TabIndex = 7
+        Me.CH010.Text = "Burger (L0, E)"
+        Me.CH010.UseVisualStyleBackColor = True
+        '
         'CH014
         '
         Me.CH014.AutoSize = True
-        Me.CH014.Location = New System.Drawing.Point(97, 23)
+        Me.CH014.Location = New System.Drawing.Point(102, 23)
         Me.CH014.Name = "CH014"
         Me.CH014.Size = New System.Drawing.Size(89, 19)
         Me.CH014.TabIndex = 6
@@ -1115,6 +1192,16 @@ Partial Class Form1
         Me.CH012.TabIndex = 3
         Me.CH012.Text = "Burger (L0, S)"
         Me.CH012.UseVisualStyleBackColor = True
+        '
+        'CH019
+        '
+        Me.CH019.AutoSize = True
+        Me.CH019.Location = New System.Drawing.Point(7, 57)
+        Me.CH019.Name = "CH019"
+        Me.CH019.Size = New System.Drawing.Size(83, 19)
+        Me.CH019.TabIndex = 2
+        Me.CH019.Text = "Empty (L1)"
+        Me.CH019.UseVisualStyleBackColor = True
         '
         'CH017
         '
@@ -2161,41 +2248,193 @@ Partial Class Form1
         Me.btnInventoryAdd.Text = "Add"
         Me.btnInventoryAdd.UseVisualStyleBackColor = True
         '
-        'CH010
+        'grpDungeon
         '
-        Me.CH010.AutoSize = True
-        Me.CH010.Location = New System.Drawing.Point(97, 40)
-        Me.CH010.Name = "CH010"
-        Me.CH010.Size = New System.Drawing.Size(96, 19)
-        Me.CH010.TabIndex = 7
-        Me.CH010.Text = "Burger (L0, E)"
-        Me.CH010.UseVisualStyleBackColor = True
+        Me.grpDungeon.Controls.Add(Me.btnDungeon16)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon15)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon14)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon13)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon12)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon11)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon10)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon9)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon8)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon7)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon0)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon6)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon5)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon4)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon3)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon2)
+        Me.grpDungeon.Controls.Add(Me.btnDungeon1)
+        Me.grpDungeon.Controls.Add(Me.TextBox2)
+        Me.grpDungeon.Controls.Add(Me.Label31)
+        Me.grpDungeon.Location = New System.Drawing.Point(1242, 25)
+        Me.grpDungeon.Name = "grpDungeon"
+        Me.grpDungeon.Size = New System.Drawing.Size(272, 265)
+        Me.grpDungeon.TabIndex = 29
+        Me.grpDungeon.TabStop = False
+        Me.grpDungeon.Text = "Dungeon"
         '
-        'CH019
+        'btnDungeon15
         '
-        Me.CH019.AutoSize = True
-        Me.CH019.Location = New System.Drawing.Point(7, 57)
-        Me.CH019.Name = "CH019"
-        Me.CH019.Size = New System.Drawing.Size(83, 19)
-        Me.CH019.TabIndex = 2
-        Me.CH019.Text = "Empty (L1)"
-        Me.CH019.UseVisualStyleBackColor = True
+        Me.btnDungeon15.Location = New System.Drawing.Point(247, 56)
+        Me.btnDungeon15.Name = "btnDungeon15"
+        Me.btnDungeon15.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon15.TabIndex = 17
+        Me.btnDungeon15.UseVisualStyleBackColor = True
         '
-        'CH009
+        'btnDungeon14
         '
-        Me.CH009.AutoSize = True
-        Me.CH009.Location = New System.Drawing.Point(97, 57)
-        Me.CH009.Name = "CH009"
-        Me.CH009.Size = New System.Drawing.Size(83, 19)
-        Me.CH009.TabIndex = 8
-        Me.CH009.Text = "Empty (L0)"
-        Me.CH009.UseVisualStyleBackColor = True
+        Me.btnDungeon14.Location = New System.Drawing.Point(231, 56)
+        Me.btnDungeon14.Name = "btnDungeon14"
+        Me.btnDungeon14.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon14.TabIndex = 16
+        Me.btnDungeon14.UseVisualStyleBackColor = True
+        '
+        'btnDungeon13
+        '
+        Me.btnDungeon13.Location = New System.Drawing.Point(215, 56)
+        Me.btnDungeon13.Name = "btnDungeon13"
+        Me.btnDungeon13.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon13.TabIndex = 15
+        Me.btnDungeon13.UseVisualStyleBackColor = True
+        '
+        'btnDungeon12
+        '
+        Me.btnDungeon12.Location = New System.Drawing.Point(199, 56)
+        Me.btnDungeon12.Name = "btnDungeon12"
+        Me.btnDungeon12.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon12.TabIndex = 14
+        Me.btnDungeon12.UseVisualStyleBackColor = True
+        '
+        'btnDungeon11
+        '
+        Me.btnDungeon11.Location = New System.Drawing.Point(183, 56)
+        Me.btnDungeon11.Name = "btnDungeon11"
+        Me.btnDungeon11.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon11.TabIndex = 13
+        Me.btnDungeon11.UseVisualStyleBackColor = True
+        '
+        'btnDungeon10
+        '
+        Me.btnDungeon10.Location = New System.Drawing.Point(167, 56)
+        Me.btnDungeon10.Name = "btnDungeon10"
+        Me.btnDungeon10.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon10.TabIndex = 12
+        Me.btnDungeon10.UseVisualStyleBackColor = True
+        '
+        'btnDungeon9
+        '
+        Me.btnDungeon9.Location = New System.Drawing.Point(151, 56)
+        Me.btnDungeon9.Name = "btnDungeon9"
+        Me.btnDungeon9.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon9.TabIndex = 11
+        Me.btnDungeon9.UseVisualStyleBackColor = True
+        '
+        'btnDungeon8
+        '
+        Me.btnDungeon8.Location = New System.Drawing.Point(135, 56)
+        Me.btnDungeon8.Name = "btnDungeon8"
+        Me.btnDungeon8.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon8.TabIndex = 10
+        Me.btnDungeon8.UseVisualStyleBackColor = True
+        '
+        'btnDungeon7
+        '
+        Me.btnDungeon7.Location = New System.Drawing.Point(119, 56)
+        Me.btnDungeon7.Name = "btnDungeon7"
+        Me.btnDungeon7.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon7.TabIndex = 9
+        Me.btnDungeon7.UseVisualStyleBackColor = True
+        '
+        'btnDungeon0
+        '
+        Me.btnDungeon0.Location = New System.Drawing.Point(7, 56)
+        Me.btnDungeon0.Name = "btnDungeon0"
+        Me.btnDungeon0.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon0.TabIndex = 8
+        Me.btnDungeon0.UseVisualStyleBackColor = True
+        '
+        'btnDungeon6
+        '
+        Me.btnDungeon6.Location = New System.Drawing.Point(103, 56)
+        Me.btnDungeon6.Name = "btnDungeon6"
+        Me.btnDungeon6.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon6.TabIndex = 7
+        Me.btnDungeon6.UseVisualStyleBackColor = True
+        '
+        'btnDungeon5
+        '
+        Me.btnDungeon5.Location = New System.Drawing.Point(87, 56)
+        Me.btnDungeon5.Name = "btnDungeon5"
+        Me.btnDungeon5.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon5.TabIndex = 6
+        Me.btnDungeon5.UseVisualStyleBackColor = True
+        '
+        'btnDungeon4
+        '
+        Me.btnDungeon4.Location = New System.Drawing.Point(71, 56)
+        Me.btnDungeon4.Name = "btnDungeon4"
+        Me.btnDungeon4.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon4.TabIndex = 5
+        Me.btnDungeon4.UseVisualStyleBackColor = True
+        '
+        'btnDungeon3
+        '
+        Me.btnDungeon3.Location = New System.Drawing.Point(55, 56)
+        Me.btnDungeon3.Name = "btnDungeon3"
+        Me.btnDungeon3.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon3.TabIndex = 4
+        Me.btnDungeon3.UseVisualStyleBackColor = True
+        '
+        'btnDungeon2
+        '
+        Me.btnDungeon2.Location = New System.Drawing.Point(39, 56)
+        Me.btnDungeon2.Name = "btnDungeon2"
+        Me.btnDungeon2.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon2.TabIndex = 3
+        Me.btnDungeon2.UseVisualStyleBackColor = True
+        '
+        'btnDungeon1
+        '
+        Me.btnDungeon1.Location = New System.Drawing.Point(23, 56)
+        Me.btnDungeon1.Name = "btnDungeon1"
+        Me.btnDungeon1.Size = New System.Drawing.Size(16, 16)
+        Me.btnDungeon1.TabIndex = 2
+        Me.btnDungeon1.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(100, 26)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox2.TabIndex = 1
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(7, 26)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(91, 15)
+        Me.Label31.TabIndex = 0
+        Me.Label31.Text = "Dungeon Name"
+        '
+        'btnDungeon16
+        '
+        Me.btnDungeon16.Location = New System.Drawing.Point(128, 124)
+        Me.btnDungeon16.Name = "btnDungeon16"
+        Me.btnDungeon16.Size = New System.Drawing.Size(87, 102)
+        Me.btnDungeon16.TabIndex = 18
+        Me.btnDungeon16.Text = "sdfgsdfg"
+        Me.btnDungeon16.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1243, 698)
+        Me.ClientSize = New System.Drawing.Size(1526, 698)
+        Me.Controls.Add(Me.grpDungeon)
         Me.Controls.Add(Me.dummy)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox7)
@@ -2290,6 +2529,8 @@ Partial Class Form1
         CType(Me.Meseta, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.grpDungeon.ResumeLayout(False)
+        Me.grpDungeon.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2479,4 +2720,27 @@ Partial Class Form1
     Friend WithEvents CH010 As CheckBox
     Friend WithEvents CH009 As CheckBox
     Friend WithEvents CH019 As CheckBox
+    Friend WithEvents CH020 As CheckBox
+    Friend WithEvents CH026 As CheckBox
+    Friend WithEvents CH021 As CheckBox
+    Friend WithEvents grpDungeon As GroupBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents btnDungeon6 As Button
+    Friend WithEvents btnDungeon5 As Button
+    Friend WithEvents btnDungeon4 As Button
+    Friend WithEvents btnDungeon3 As Button
+    Friend WithEvents btnDungeon2 As Button
+    Friend WithEvents btnDungeon1 As Button
+    Friend WithEvents btnDungeon0 As Button
+    Friend WithEvents btnDungeon15 As Button
+    Friend WithEvents btnDungeon14 As Button
+    Friend WithEvents btnDungeon13 As Button
+    Friend WithEvents btnDungeon12 As Button
+    Friend WithEvents btnDungeon11 As Button
+    Friend WithEvents btnDungeon10 As Button
+    Friend WithEvents btnDungeon9 As Button
+    Friend WithEvents btnDungeon8 As Button
+    Friend WithEvents btnDungeon7 As Button
+    Friend WithEvents btnDungeon16 As Button
 End Class
