@@ -2,7 +2,13 @@
 'Imports Character
 
 
-Public Class Form1
+'To Do:  Add routine for saving Chests
+'Add code for file selection of loading
+'Add code for generating backup before save
+
+
+
+Public Class frmMain
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
 
         btnSave.Enabled = True
@@ -183,13 +189,26 @@ Public Class Form1
 
 
 
-        For i = 0 To 16
+        For i = 0 To 32
 
             myChar = Game.DungeonLayout(dungeonID).Chars(i)
             Game.loadDungeonLayout(i, myChar)
 
 
         Next
+
+
+        Dim btnDungeonTest(10) As CheckBox
+        For i = 0 To 10
+
+            btnDungeonTest(i) = New CheckBox
+            btnDungeonTest(i).Text = "test"
+            btnDungeonTest(i).Location = New Point((i * 20), (i * 20))
+            btnDungeonTest(i).Width = 200
+            'CheckBox.Location = New Point((i + 10), (i + 25))
+        Next
+
+
 
         '#####################
         '### Form Controls ###
@@ -484,5 +503,7 @@ Public Class Form1
         End If
     End Sub
 
-
+    Private Sub btnChests_Click(sender As Object, e As EventArgs) Handles btnChests.Click
+        frmChests.Visible = vbTrue
+    End Sub
 End Class
