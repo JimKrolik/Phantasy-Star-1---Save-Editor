@@ -109,6 +109,7 @@ Partial Class frmMain
         Me.cmbItems = New System.Windows.Forms.ComboBox()
         Me.btnInventoryAdd = New System.Windows.Forms.Button()
         Me.btnChests = New System.Windows.Forms.Button()
+        Me.btnSaveForm = New System.Windows.Forms.Button()
         Me.grpAlis.SuspendLayout()
         CType(Me.AlisEXP, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlisDefense, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1029,11 +1030,21 @@ Partial Class frmMain
         Me.btnChests.Text = "Chests"
         Me.btnChests.UseVisualStyleBackColor = True
         '
+        'btnSaveForm
+        '
+        Me.btnSaveForm.Location = New System.Drawing.Point(613, 219)
+        Me.btnSaveForm.Name = "btnSaveForm"
+        Me.btnSaveForm.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveForm.TabIndex = 30
+        Me.btnSaveForm.Text = "World Data"
+        Me.btnSaveForm.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 698)
+        Me.Controls.Add(Me.btnSaveForm)
         Me.Controls.Add(Me.btnChests)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox4)
@@ -1186,4 +1197,5 @@ Partial Class frmMain
     Friend WithEvents btnInventoryAdd As Button
     Friend WithEvents btnInventoryDelete As Button
     Friend WithEvents btnChests As Button
+    Friend WithEvents btnSaveForm As Button
 End Class

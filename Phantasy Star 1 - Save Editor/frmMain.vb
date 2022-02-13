@@ -7,7 +7,6 @@
 'Add code for generating backup before save
 
 
-
 Public Class frmMain
     Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
 
@@ -184,31 +183,18 @@ Public Class frmMain
         '### Dungeon Layout ###
         '######################
 
+        'Load the current dungeon save data onto save form.
+
         Dim dungeonID As Integer = 0
         Dim myChar As Char
 
+        For i = 0 To 255
 
-
-        For i = 0 To 32
-
+            'Read each bit of the dungeon data string and feed it into the load function for form data.
             myChar = Game.DungeonLayout(dungeonID).Chars(i)
             Game.loadDungeonLayout(i, myChar)
 
-
         Next
-
-
-        Dim btnDungeonTest(10) As CheckBox
-        For i = 0 To 10
-
-            btnDungeonTest(i) = New CheckBox
-            btnDungeonTest(i).Text = "test"
-            btnDungeonTest(i).Location = New Point((i * 20), (i * 20))
-            btnDungeonTest(i).Width = 200
-            'CheckBox.Location = New Point((i + 10), (i + 25))
-        Next
-
-
 
         '#####################
         '### Form Controls ###
@@ -475,6 +461,12 @@ Public Class frmMain
         'Disable inventory buttons
         btnInventoryAdd.Enabled = False
         btnInventoryDelete.Enabled = False
+        'btnChecks.enabled = False
+
+
+        'Load the save data form to create the array field for save data.
+        frmSave.Show()
+        frmSave.Hide()
 
     End Sub
 
@@ -505,5 +497,9 @@ Public Class frmMain
 
     Private Sub btnChests_Click(sender As Object, e As EventArgs) Handles btnChests.Click
         frmChests.Visible = vbTrue
+    End Sub
+
+    Private Sub btnSaveForm_Click(sender As Object, e As EventArgs) Handles btnSaveForm.Click
+        frmSave.Visible = vbTrue
     End Sub
 End Class

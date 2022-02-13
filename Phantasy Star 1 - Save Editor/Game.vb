@@ -210,56 +210,22 @@ Public Class Game
     End Sub
 
     Public Shared Sub loadDungeonLayout(position As Integer, type As Char)
-        'Map our checkboxes into an array 
-        Dim dungeonPosition(32) As Button
-
-        'Load the buttons into the array and set.
-
-        dungeonPosition(0) = frmSave.btnDungeon0
-        dungeonPosition(1) = frmSave.btnDungeon1
-        dungeonPosition(2) = frmSave.btnDungeon2
-        dungeonPosition(3) = frmSave.btnDungeon3
-        dungeonPosition(4) = frmSave.btnDungeon4
-        dungeonPosition(5) = frmSave.btnDungeon5
-        dungeonPosition(6) = frmSave.btnDungeon6
-        dungeonPosition(7) = frmSave.btnDungeon7
-        dungeonPosition(8) = frmSave.btnDungeon8
-        dungeonPosition(9) = frmSave.btnDungeon9
-        dungeonPosition(10) = frmSave.btnDungeon10
-        dungeonPosition(11) = frmSave.btnDungeon11
-        dungeonPosition(12) = frmSave.btnDungeon12
-        dungeonPosition(13) = frmSave.btnDungeon13
-        dungeonPosition(14) = frmSave.btnDungeon14
-        dungeonPosition(15) = frmSave.btnDungeon15
-        dungeonPosition(16) = frmSave.btnDungeon16
-        dungeonPosition(17) = frmSave.btnDungeon17
-        dungeonPosition(18) = frmSave.btnDungeon18
-        dungeonPosition(19) = frmSave.btnDungeon19
-        dungeonPosition(20) = frmSave.btnDungeon20
-        dungeonPosition(21) = frmSave.btnDungeon21
-        dungeonPosition(22) = frmSave.btnDungeon22
-        dungeonPosition(23) = frmSave.btnDungeon23
-        dungeonPosition(24) = frmSave.btnDungeon24
-        dungeonPosition(25) = frmSave.btnDungeon25
-        dungeonPosition(26) = frmSave.btnDungeon26
-        dungeonPosition(27) = frmSave.btnDungeon27
-        dungeonPosition(28) = frmSave.btnDungeon28
-        dungeonPosition(29) = frmSave.btnDungeon29
-        dungeonPosition(30) = frmSave.btnDungeon30
-        dungeonPosition(31) = frmSave.btnDungeon31
-        dungeonPosition(32) = frmSave.btnDungeon32
 
         If (type = "0") Then 'Empty Space
-            dungeonPosition(position).BackColor = Color.White
+            frmSave.dungeonMap(position).BackColor = Color.White
+
         ElseIf (type = "1") Then 'Wall
-            dungeonPosition(position).BackColor = Color.Black
-            dungeonPosition(position).Enabled = False
+            frmSave.dungeonMap(position).BackColor = Color.Black
+            frmSave.dungeonMap(position).Enabled = False
+
         ElseIf (type = "2") Then 'Floor Up
-            dungeonPosition(position).BackColor = Color.Lime
+            frmSave.dungeonMap(position).BackColor = Color.Lime
+
         ElseIf (type = "3") Then 'Floor Down
-            dungeonPosition(position).BackColor = Color.Green
+            frmSave.dungeonMap(position).BackColor = Color.Green
+
         ElseIf (type = "4") Then 'Regular Door
-            dungeonPosition(position).BackColor = Color.Yellow
+            frmSave.dungeonMap(position).BackColor = Color.Yellow
         End If
 
     End Sub
