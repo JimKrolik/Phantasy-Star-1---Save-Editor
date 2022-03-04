@@ -5,6 +5,7 @@ Public Class Game
     Public Shared MesetaOffset As Integer() = {1504, 0, 0, 0, 0}
     Public Shared TransferRecallOffset As Integer() = {1047, 0, 0, 0, 0}
     Public Shared ChestOffset As Integer() = {1792, 0, 0, 0, 0}             'block ends, presumably at 1983 for save 1
+    Public Shared DungeonOffset As Integer() = {1037, 0, 0, 0, 0}           'ID of dungeon the current save is in.
 
     Public Shared RecallLocation() As String = {
         "Alis House",   '00
@@ -47,6 +48,7 @@ Public Class Game
         "Baya Malay Tower 5th Floor"
     }
 
+    'bank 15
     Public Shared DungeonLayout() As String = {
         "11111111111111111111A000010111A1111111110101110110000081010111011011111100011101101800010101C0011010110101A111011010000001118101101111111111010110000000000001011011011111010101101100001101010110000110000101011011000011010101100811118001A1A11111111111111111",
         "1111111111111111111111181111111111111110111111111111D1151111111111110110111111111100000000050811110110111011111111511D111D1111111101111D1111D11111000110111101111101000000000111118110111011111111011D1115111111110111111011111111C11111181111111111111111111111",
@@ -81,51 +83,49 @@ Public Class Game
         chest(18) = frmChests.CH019           'Palma      Mesusa Tower        Empty (L1)
         chest(19) = frmChests.CH020           'Palma      Medusa Tower        10 MST (L2)
         chest(20) = frmChests.CH021           'Palma      Medusa Tower        5 MST (L2)
-        chest(21) = frmChests.dummy
+        chest(21) = frmChests.CH022           'Palma      Medusa Tower        Empty (L2)
         chest(22) = frmChests.CH023           'Palma      Medusa Tower        Burger (L2)
         chest(23) = frmChests.dummy
         chest(24) = frmChests.dummy
-        chest(25) = frmChests.CH026           'Palma      Medusa Tower        35 MST (L3)
-        chest(26) = frmChests.dummy
+        chest(25) = frmChests.CH026           'Palma      Medusa Tower        35 MST (L3)   
+        chest(26) = frmChests.CH027           'Palma      Medusa Tower        Empty (L3)
         chest(27) = frmChests.dummy
-        chest(28) = frmChests.dummy
-        chest(29) = frmChests.dummy
+        chest(28) = frmChests.CH029           'Palma      Medusa Tower        10 MST (L3)   
+        chest(29) = frmChests.CH030           'Palma      Medusa Tower        Burger (L4)
         chest(30) = frmChests.dummy
         chest(31) = frmChests.dummy
-        chest(32) = frmChests.dummy
-        chest(33) = frmChests.dummy
-        chest(34) = frmChests.dummy
-        chest(35) = frmChests.dummy
-        chest(36) = frmChests.dummy
-        chest(37) = frmChests.dummy
-        chest(38) = frmChests.dummy
-        chest(39) = frmChests.dummy
-        chest(40) = frmChests.dummy
-        chest(41) = frmChests.dummy
-        chest(42) = frmChests.dummy
-        chest(43) = frmChests.dummy
-        chest(44) = frmChests.dummy
-        chest(45) = frmChests.dummy
-        chest(46) = frmChests.dummy
-        chest(47) = frmChests.dummy
-        chest(48) = frmChests.dummy
-        chest(49) = frmChests.dummy
-        chest(50) = frmChests.dummy
-        chest(51) = frmChests.dummy
-        chest(52) = frmChests.dummy
-        chest(53) = frmChests.dummy
-        chest(54) = frmChests.dummy
+        chest(32) = frmChests.CH033           'Palma      Medusa Tower        Empty (L4)
+        chest(33) = frmChests.CH034           'Palma      Baya Malay          Burger (B3)
+        chest(34) = frmChests.CH035           'Palma      Baya Malay          50 MST (B3)
+        chest(35) = frmChests.CH036           'Palma      Baya Malay          Empty (B3)
+        chest(36) = frmChests.CH037           'Palma      Medusa Tower        Cola (L6)
+        chest(37) = frmChests.CH038           'Palma      Baya Malay          Burger (B2)
+        chest(38) = frmChests.CH039           'Palma      Baya Malay          Magic Lamp (B2)
+        chest(39) = frmChests.CH040           'Palma      Medusa Tower        Empty (L7)
+        chest(40) = frmChests.CH041           'Palma      Baya Malay          Cola (B1)
+        chest(41) = frmChests.CH042           'Palma      Baya Malay          500 MST (B1)
+        chest(42) = frmChests.CH043           'Palma      Baya Malay          500 MST (B1)
+        chest(43) = frmChests.CH044           'Palma      Baya Malay          Escaper (B1)
+        chest(44) = frmChests.CH045           'Palma      Baya Malay          Empty (B1)
+        chest(45) = frmChests.CH046           'Palma      Baya Malay          Short Sword (L1)
+        chest(46) = frmChests.CH047           'Palma      Baya Malay          Light Saber (L1)
+        chest(47) = frmChests.CH048           'Palma      Baya Malay          Burger (L1)
+        chest(48) = frmChests.CH049           'Palma      Baya Malay          Iron Sword (L1)
+        chest(49) = frmChests.CH050           'Palma      Baya Malay          Miracle Key
+        chest(50) = frmChests.CH051           'Palma      Baya Malay          20 MST (L2)
+        chest(51) = frmChests.CH052           'Palma      Baya Malay          Burger (L2)
+        chest(52) = frmChests.CH053           'Palma      Baya Malay          100 MST (L3)
+        chest(53) = frmChests.CH054           'Palma      Baya Malay          Iron Axe (L3)
+        chest(54) = frmChests.CH055           'Palma      Baya Malay          Empty (L3, E)
         chest(55) = frmChests.dummy
-        chest(56) = frmChests.dummy
-        chest(57) = frmChests.dummy
-        chest(58) = frmChests.dummy
-        chest(59) = frmChests.dummy
-        chest(60) = frmChests.dummy
-        chest(61) = frmChests.dummy
-        chest(62) = frmChests.dummy
-
+        chest(56) = frmChests.CH057           'Palma      Baya Malay          Empty (L3, S)
+        chest(57) = frmChests.CH058           'Palma      Baya Malay          Burger (L4, N)
+        chest(58) = frmChests.CH059           'Palma      Baya Malay          Empty (L4, W)
+        chest(59) = frmChests.CH060           'Palma      Baya Malay          Burger (L4, E)
+        chest(60) = frmChests.CH061           'Palma      Baya Malay      Empty (Level 4, S)
+        chest(61) = frmChests.CH062           'Palma      Baya Malay      Burger (L5)
         chest(62) = frmChests.CH063           'Palma      Scion Cave      Cola (Level 4)
-        chest(63) = frmChests.CH064           'Palma      Scion Cave      Empty (Level 4)
+        chest(63) = frmChests.CH064           'Palma      Scion Cave      Empty (Level 4, W)
         chest(64) = frmChests.CH065           'Palma      Naula Cave      Flash
         chest(65) = frmChests.CH066           'Palma      Scion Cave      Flash (Level 4)
         chest(66) = frmChests.CH067           'Palma      Scion Cave      Burger (Level 4)
@@ -134,15 +134,11 @@ Public Class Game
         chest(69) = frmChests.CH070           'Palma      Scion Cave      20 MST (level 4, near stairs)
         chest(70) = frmChests.CH071           'Palma      Scion Cave      20 MST (level 3, behind door)
 
-        'chest(71) = CH72
         chest(71) = frmChests.dummy
 
         chest(72) = frmChests.CH073           'Palma      Scion Cave      Empty (level 2, between traps)
         chest(73) = frmChests.CH074           'Palma      Scion Cave      Cola (level 2)
-
-        'chest(74) = CH75
-        chest(74) = frmChests.dummy
-
+        chest(74) = frmChests.CH075           'Palma      Scion Cave      Flash (Level 2)
         chest(75) = frmChests.CH076           'Palma      Naula Cave      Short Sword
         chest(76) = frmChests.CH077           'Palma      Scion Cave      20 MST (level 2)
         chest(77) = frmChests.CH078           'Palma      Scion Cave      Empty (Level 2, near stairs)
@@ -210,6 +206,34 @@ Public Class Game
     End Sub
 
     Public Shared Sub loadDungeonLayout(position As Integer, type As Char)
+
+        If (type = "0") Then 'Empty Space
+            frmSave.currentDungeonMap(position).BackColor = Color.White
+            frmSave.dungeonMap(position).BackColor = Color.White
+
+        ElseIf (type = "1") Then 'Wall
+            frmSave.currentDungeonMap(position).BackColor = Color.Black
+            frmSave.dungeonMap(position).BackColor = Color.Black
+
+            frmSave.currentDungeonMap(position).Enabled = False
+            frmSave.dungeonMap(position).Enabled = False
+
+        ElseIf (type = "2") Then 'Floor Up
+            frmSave.currentDungeonMap(position).BackColor = Color.Lime
+            frmSave.dungeonMap(position).BackColor = Color.Lime
+
+        ElseIf (type = "3") Then 'Floor Down
+            frmSave.currentDungeonMap(position).BackColor = Color.Green
+            frmSave.dungeonMap(position).BackColor = Color.Green
+
+        ElseIf (type = "4") Then 'Regular Door
+            frmSave.currentDungeonMap(position).BackColor = Color.Yellow
+            frmSave.dungeonMap(position).BackColor = Color.Yellow
+        End If
+
+    End Sub
+
+    Public Shared Sub updateDungeonLayout(position As Integer, type As Char)
 
         If (type = "0") Then 'Empty Space
             frmSave.dungeonMap(position).BackColor = Color.White

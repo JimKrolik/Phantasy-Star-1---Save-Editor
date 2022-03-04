@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmChests
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,49 @@ Partial Class frmChests
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CH055 = New System.Windows.Forms.CheckBox()
+        Me.CH061 = New System.Windows.Forms.CheckBox()
+        Me.CH060 = New System.Windows.Forms.CheckBox()
+        Me.CH062 = New System.Windows.Forms.CheckBox()
+        Me.CH059 = New System.Windows.Forms.CheckBox()
+        Me.CH051 = New System.Windows.Forms.CheckBox()
+        Me.CH058 = New System.Windows.Forms.CheckBox()
+        Me.CH047 = New System.Windows.Forms.CheckBox()
+        Me.CH041 = New System.Windows.Forms.CheckBox()
+        Me.CH043 = New System.Windows.Forms.CheckBox()
+        Me.CH038 = New System.Windows.Forms.CheckBox()
+        Me.CH044 = New System.Windows.Forms.CheckBox()
+        Me.CH039 = New System.Windows.Forms.CheckBox()
+        Me.CH049 = New System.Windows.Forms.CheckBox()
+        Me.CH050 = New System.Windows.Forms.CheckBox()
+        Me.CH057 = New System.Windows.Forms.CheckBox()
+        Me.CH054 = New System.Windows.Forms.CheckBox()
+        Me.CH053 = New System.Windows.Forms.CheckBox()
+        Me.CH052 = New System.Windows.Forms.CheckBox()
+        Me.CH046 = New System.Windows.Forms.CheckBox()
+        Me.CH034 = New System.Windows.Forms.CheckBox()
+        Me.CH036 = New System.Windows.Forms.CheckBox()
+        Me.CH035 = New System.Windows.Forms.CheckBox()
+        Me.CH045 = New System.Windows.Forms.CheckBox()
+        Me.CH042 = New System.Windows.Forms.CheckBox()
+        Me.CH048 = New System.Windows.Forms.CheckBox()
         Me.GroupBox19 = New System.Windows.Forms.GroupBox()
-        Me.CH023 = New System.Windows.Forms.CheckBox()
+        Me.CH040 = New System.Windows.Forms.CheckBox()
+        Me.CH037 = New System.Windows.Forms.CheckBox()
+        Me.CH030 = New System.Windows.Forms.CheckBox()
+        Me.CH033 = New System.Windows.Forms.CheckBox()
+        Me.CH027 = New System.Windows.Forms.CheckBox()
+        Me.CH022 = New System.Windows.Forms.CheckBox()
+        Me.CH029 = New System.Windows.Forms.CheckBox()
         Me.CH026 = New System.Windows.Forms.CheckBox()
         Me.CH021 = New System.Windows.Forms.CheckBox()
         Me.CH020 = New System.Windows.Forms.CheckBox()
         Me.CH009 = New System.Windows.Forms.CheckBox()
+        Me.CH023 = New System.Windows.Forms.CheckBox()
         Me.CH010 = New System.Windows.Forms.CheckBox()
         Me.CH014 = New System.Windows.Forms.CheckBox()
         Me.CH015 = New System.Windows.Forms.CheckBox()
@@ -58,6 +92,7 @@ Partial Class frmChests
         Me.CH084 = New System.Windows.Forms.CheckBox()
         Me.GroupBox13 = New System.Windows.Forms.GroupBox()
         Me.CH068 = New System.Windows.Forms.CheckBox()
+        Me.CH075 = New System.Windows.Forms.CheckBox()
         Me.CH065 = New System.Windows.Forms.CheckBox()
         Me.CH076 = New System.Windows.Forms.CheckBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
@@ -84,10 +119,10 @@ Partial Class frmChests
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.CH003 = New System.Windows.Forms.CheckBox()
         Me.CH002 = New System.Windows.Forms.CheckBox()
+        Me.CH001 = New System.Windows.Forms.CheckBox()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.CH006 = New System.Windows.Forms.CheckBox()
         Me.CH005 = New System.Windows.Forms.CheckBox()
-        Me.CH001 = New System.Windows.Forms.CheckBox()
         Me.grpMotavia = New System.Windows.Forms.GroupBox()
         Me.GroupBox14 = New System.Windows.Forms.GroupBox()
         Me.CH124 = New System.Windows.Forms.CheckBox()
@@ -126,6 +161,7 @@ Partial Class frmChests
         Me.dummy = New System.Windows.Forms.CheckBox()
         Me.btnHide = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.GroupBox19.SuspendLayout()
         Me.GroupBox16.SuspendLayout()
         Me.GroupBox15.SuspendLayout()
@@ -146,6 +182,7 @@ Partial Class frmChests
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.GroupBox19)
         Me.GroupBox1.Controls.Add(Me.GroupBox16)
         Me.GroupBox1.Controls.Add(Me.GroupBox15)
@@ -157,18 +194,320 @@ Partial Class frmChests
         Me.GroupBox1.Controls.Add(Me.GroupBox8)
         Me.GroupBox1.Location = New System.Drawing.Point(94, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(496, 631)
+        Me.GroupBox1.Size = New System.Drawing.Size(801, 458)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Palma Chests"
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.CH055)
+        Me.GroupBox2.Controls.Add(Me.CH061)
+        Me.GroupBox2.Controls.Add(Me.CH060)
+        Me.GroupBox2.Controls.Add(Me.CH062)
+        Me.GroupBox2.Controls.Add(Me.CH059)
+        Me.GroupBox2.Controls.Add(Me.CH051)
+        Me.GroupBox2.Controls.Add(Me.CH058)
+        Me.GroupBox2.Controls.Add(Me.CH047)
+        Me.GroupBox2.Controls.Add(Me.CH041)
+        Me.GroupBox2.Controls.Add(Me.CH043)
+        Me.GroupBox2.Controls.Add(Me.CH038)
+        Me.GroupBox2.Controls.Add(Me.CH044)
+        Me.GroupBox2.Controls.Add(Me.CH039)
+        Me.GroupBox2.Controls.Add(Me.CH049)
+        Me.GroupBox2.Controls.Add(Me.CH050)
+        Me.GroupBox2.Controls.Add(Me.CH057)
+        Me.GroupBox2.Controls.Add(Me.CH054)
+        Me.GroupBox2.Controls.Add(Me.CH053)
+        Me.GroupBox2.Controls.Add(Me.CH052)
+        Me.GroupBox2.Controls.Add(Me.CH046)
+        Me.GroupBox2.Controls.Add(Me.CH034)
+        Me.GroupBox2.Controls.Add(Me.CH036)
+        Me.GroupBox2.Controls.Add(Me.CH035)
+        Me.GroupBox2.Controls.Add(Me.CH045)
+        Me.GroupBox2.Controls.Add(Me.CH042)
+        Me.GroupBox2.Controls.Add(Me.CH048)
+        Me.GroupBox2.Location = New System.Drawing.Point(496, 195)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(293, 255)
+        Me.GroupBox2.TabIndex = 16
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Baya Malay Tower"
+        '
+        'CH055
+        '
+        Me.CH055.AutoSize = True
+        Me.CH055.Location = New System.Drawing.Point(119, 227)
+        Me.CH055.Name = "CH055"
+        Me.CH055.Size = New System.Drawing.Size(95, 19)
+        Me.CH055.TabIndex = 13
+        Me.CH055.Text = "Empty (L3, E)"
+        Me.CH055.UseVisualStyleBackColor = True
+        '
+        'CH061
+        '
+        Me.CH061.AutoSize = True
+        Me.CH061.Location = New System.Drawing.Point(7, 212)
+        Me.CH061.Name = "CH061"
+        Me.CH061.Size = New System.Drawing.Size(95, 19)
+        Me.CH061.TabIndex = 17
+        Me.CH061.Text = "Empty (L4, S)"
+        Me.CH061.UseVisualStyleBackColor = True
+        '
+        'CH060
+        '
+        Me.CH060.AutoSize = True
+        Me.CH060.Location = New System.Drawing.Point(7, 159)
+        Me.CH060.Name = "CH060"
+        Me.CH060.Size = New System.Drawing.Size(96, 19)
+        Me.CH060.TabIndex = 18
+        Me.CH060.Text = "Burger (L4, E)"
+        Me.CH060.UseVisualStyleBackColor = True
+        '
+        'CH062
+        '
+        Me.CH062.AutoSize = True
+        Me.CH062.Location = New System.Drawing.Point(7, 195)
+        Me.CH062.Name = "CH062"
+        Me.CH062.Size = New System.Drawing.Size(84, 19)
+        Me.CH062.TabIndex = 14
+        Me.CH062.Text = "Burger (L5)"
+        Me.CH062.UseVisualStyleBackColor = True
+        '
+        'CH059
+        '
+        Me.CH059.AutoSize = True
+        Me.CH059.Location = New System.Drawing.Point(7, 178)
+        Me.CH059.Name = "CH059"
+        Me.CH059.Size = New System.Drawing.Size(100, 19)
+        Me.CH059.TabIndex = 16
+        Me.CH059.Text = "Empty (L4, W)"
+        Me.CH059.UseVisualStyleBackColor = True
+        '
+        'CH051
+        '
+        Me.CH051.AutoSize = True
+        Me.CH051.Location = New System.Drawing.Point(7, 90)
+        Me.CH051.Name = "CH051"
+        Me.CH051.Size = New System.Drawing.Size(87, 19)
+        Me.CH051.TabIndex = 19
+        Me.CH051.Text = "20 MST (L2)"
+        Me.CH051.UseVisualStyleBackColor = True
+        '
+        'CH058
+        '
+        Me.CH058.AutoSize = True
+        Me.CH058.Location = New System.Drawing.Point(119, 108)
+        Me.CH058.Name = "CH058"
+        Me.CH058.Size = New System.Drawing.Size(99, 19)
+        Me.CH058.TabIndex = 15
+        Me.CH058.Text = "Burger (L4, N)"
+        Me.CH058.UseVisualStyleBackColor = True
+        '
+        'CH047
+        '
+        Me.CH047.AutoSize = True
+        Me.CH047.Location = New System.Drawing.Point(7, 74)
+        Me.CH047.Name = "CH047"
+        Me.CH047.Size = New System.Drawing.Size(108, 19)
+        Me.CH047.TabIndex = 18
+        Me.CH047.Text = "Light Saber (L1)"
+        Me.CH047.UseVisualStyleBackColor = True
+        '
+        'CH041
+        '
+        Me.CH041.AutoSize = True
+        Me.CH041.Location = New System.Drawing.Point(7, 229)
+        Me.CH041.Name = "CH041"
+        Me.CH041.Size = New System.Drawing.Size(74, 19)
+        Me.CH041.TabIndex = 17
+        Me.CH041.Text = "Cola (B1)"
+        Me.CH041.UseVisualStyleBackColor = True
+        '
+        'CH043
+        '
+        Me.CH043.AutoSize = True
+        Me.CH043.Location = New System.Drawing.Point(119, 74)
+        Me.CH043.Name = "CH043"
+        Me.CH043.Size = New System.Drawing.Size(106, 19)
+        Me.CH043.TabIndex = 16
+        Me.CH043.Text = "500 MST (B1, S)"
+        Me.CH043.UseVisualStyleBackColor = True
+        '
+        'CH038
+        '
+        Me.CH038.AutoSize = True
+        Me.CH038.Location = New System.Drawing.Point(7, 142)
+        Me.CH038.Name = "CH038"
+        Me.CH038.Size = New System.Drawing.Size(85, 19)
+        Me.CH038.TabIndex = 15
+        Me.CH038.Text = "Burger (B2)"
+        Me.CH038.UseVisualStyleBackColor = True
+        '
+        'CH044
+        '
+        Me.CH044.AutoSize = True
+        Me.CH044.Location = New System.Drawing.Point(7, 125)
+        Me.CH044.Name = "CH044"
+        Me.CH044.Size = New System.Drawing.Size(90, 19)
+        Me.CH044.TabIndex = 14
+        Me.CH044.Text = "Escaper (B1)"
+        Me.CH044.UseVisualStyleBackColor = True
+        '
+        'CH039
+        '
+        Me.CH039.AutoSize = True
+        Me.CH039.Location = New System.Drawing.Point(7, 108)
+        Me.CH039.Name = "CH039"
+        Me.CH039.Size = New System.Drawing.Size(116, 19)
+        Me.CH039.TabIndex = 13
+        Me.CH039.Text = "Magic Lamp (B2)"
+        Me.CH039.UseVisualStyleBackColor = True
+        '
+        'CH049
+        '
+        Me.CH049.AutoSize = True
+        Me.CH049.Location = New System.Drawing.Point(119, 91)
+        Me.CH049.Name = "CH049"
+        Me.CH049.Size = New System.Drawing.Size(106, 19)
+        Me.CH049.TabIndex = 12
+        Me.CH049.Text = "Iron Sword (L2)"
+        Me.CH049.UseVisualStyleBackColor = True
+        '
+        'CH050
+        '
+        Me.CH050.AutoSize = True
+        Me.CH050.Location = New System.Drawing.Point(119, 210)
+        Me.CH050.Name = "CH050"
+        Me.CH050.Size = New System.Drawing.Size(110, 19)
+        Me.CH050.TabIndex = 11
+        Me.CH050.Text = "Miracle Key (L2)"
+        Me.CH050.UseVisualStyleBackColor = True
+        '
+        'CH057
+        '
+        Me.CH057.AutoSize = True
+        Me.CH057.Location = New System.Drawing.Point(119, 193)
+        Me.CH057.Name = "CH057"
+        Me.CH057.Size = New System.Drawing.Size(95, 19)
+        Me.CH057.TabIndex = 10
+        Me.CH057.Text = "Empty (L3, S)"
+        Me.CH057.UseVisualStyleBackColor = True
+        '
+        'CH054
+        '
+        Me.CH054.AutoSize = True
+        Me.CH054.Location = New System.Drawing.Point(119, 176)
+        Me.CH054.Name = "CH054"
+        Me.CH054.Size = New System.Drawing.Size(93, 19)
+        Me.CH054.TabIndex = 9
+        Me.CH054.Text = "Iron Axe (L3)"
+        Me.CH054.UseVisualStyleBackColor = True
+        '
+        'CH053
+        '
+        Me.CH053.AutoSize = True
+        Me.CH053.Location = New System.Drawing.Point(119, 159)
+        Me.CH053.Name = "CH053"
+        Me.CH053.Size = New System.Drawing.Size(93, 19)
+        Me.CH053.TabIndex = 8
+        Me.CH053.Text = "100 MST (L3)"
+        Me.CH053.UseVisualStyleBackColor = True
+        '
+        'CH052
+        '
+        Me.CH052.AutoSize = True
+        Me.CH052.Location = New System.Drawing.Point(119, 142)
+        Me.CH052.Name = "CH052"
+        Me.CH052.Size = New System.Drawing.Size(84, 19)
+        Me.CH052.TabIndex = 7
+        Me.CH052.Text = "Burger (L2)"
+        Me.CH052.UseVisualStyleBackColor = True
+        '
+        'CH046
+        '
+        Me.CH046.AutoSize = True
+        Me.CH046.Location = New System.Drawing.Point(119, 125)
+        Me.CH046.Name = "CH046"
+        Me.CH046.Size = New System.Drawing.Size(113, 19)
+        Me.CH046.TabIndex = 6
+        Me.CH046.Text = "Short Sword (L1)"
+        Me.CH046.UseVisualStyleBackColor = True
+        '
+        'CH034
+        '
+        Me.CH034.AutoSize = True
+        Me.CH034.Location = New System.Drawing.Point(7, 57)
+        Me.CH034.Name = "CH034"
+        Me.CH034.Size = New System.Drawing.Size(85, 19)
+        Me.CH034.TabIndex = 5
+        Me.CH034.Text = "Burger (B3)"
+        Me.CH034.UseVisualStyleBackColor = True
+        '
+        'CH036
+        '
+        Me.CH036.AutoSize = True
+        Me.CH036.Location = New System.Drawing.Point(7, 40)
+        Me.CH036.Name = "CH036"
+        Me.CH036.Size = New System.Drawing.Size(84, 19)
+        Me.CH036.TabIndex = 4
+        Me.CH036.Text = "Empty (B3)"
+        Me.CH036.UseVisualStyleBackColor = True
+        '
+        'CH035
+        '
+        Me.CH035.AutoSize = True
+        Me.CH035.Location = New System.Drawing.Point(7, 23)
+        Me.CH035.Name = "CH035"
+        Me.CH035.Size = New System.Drawing.Size(88, 19)
+        Me.CH035.TabIndex = 3
+        Me.CH035.Text = "50 MST (B3)"
+        Me.CH035.UseVisualStyleBackColor = True
+        '
+        'CH045
+        '
+        Me.CH045.AutoSize = True
+        Me.CH045.Location = New System.Drawing.Point(119, 40)
+        Me.CH045.Name = "CH045"
+        Me.CH045.Size = New System.Drawing.Size(84, 19)
+        Me.CH045.TabIndex = 2
+        Me.CH045.Text = "Empty (B1)"
+        Me.CH045.UseVisualStyleBackColor = True
+        '
+        'CH042
+        '
+        Me.CH042.AutoSize = True
+        Me.CH042.Location = New System.Drawing.Point(119, 22)
+        Me.CH042.Name = "CH042"
+        Me.CH042.Size = New System.Drawing.Size(109, 19)
+        Me.CH042.TabIndex = 1
+        Me.CH042.Text = "500 MST (B1, N)"
+        Me.CH042.UseVisualStyleBackColor = True
+        '
+        'CH048
+        '
+        Me.CH048.AutoSize = True
+        Me.CH048.Location = New System.Drawing.Point(119, 57)
+        Me.CH048.Name = "CH048"
+        Me.CH048.Size = New System.Drawing.Size(84, 19)
+        Me.CH048.TabIndex = 0
+        Me.CH048.Text = "Burger (L1)"
+        Me.CH048.UseVisualStyleBackColor = True
+        '
         'GroupBox19
         '
-        Me.GroupBox19.Controls.Add(Me.CH023)
+        Me.GroupBox19.Controls.Add(Me.CH040)
+        Me.GroupBox19.Controls.Add(Me.CH037)
+        Me.GroupBox19.Controls.Add(Me.CH030)
+        Me.GroupBox19.Controls.Add(Me.CH033)
+        Me.GroupBox19.Controls.Add(Me.CH027)
+        Me.GroupBox19.Controls.Add(Me.CH022)
+        Me.GroupBox19.Controls.Add(Me.CH029)
         Me.GroupBox19.Controls.Add(Me.CH026)
         Me.GroupBox19.Controls.Add(Me.CH021)
         Me.GroupBox19.Controls.Add(Me.CH020)
         Me.GroupBox19.Controls.Add(Me.CH009)
+        Me.GroupBox19.Controls.Add(Me.CH023)
         Me.GroupBox19.Controls.Add(Me.CH010)
         Me.GroupBox19.Controls.Add(Me.CH014)
         Me.GroupBox19.Controls.Add(Me.CH015)
@@ -177,22 +516,82 @@ Partial Class frmChests
         Me.GroupBox19.Controls.Add(Me.CH019)
         Me.GroupBox19.Controls.Add(Me.CH017)
         Me.GroupBox19.Controls.Add(Me.CH016)
-        Me.GroupBox19.Location = New System.Drawing.Point(17, 334)
+        Me.GroupBox19.Location = New System.Drawing.Point(496, 23)
         Me.GroupBox19.Name = "GroupBox19"
-        Me.GroupBox19.Size = New System.Drawing.Size(305, 133)
+        Me.GroupBox19.Size = New System.Drawing.Size(293, 161)
         Me.GroupBox19.TabIndex = 15
         Me.GroupBox19.TabStop = False
         Me.GroupBox19.Text = "Medusa Tower"
         '
-        'CH023
+        'CH040
         '
-        Me.CH023.AutoSize = True
-        Me.CH023.Location = New System.Drawing.Point(197, 24)
-        Me.CH023.Name = "CH023"
-        Me.CH023.Size = New System.Drawing.Size(84, 19)
-        Me.CH023.TabIndex = 12
-        Me.CH023.Text = "Burger (L2)"
-        Me.CH023.UseVisualStyleBackColor = True
+        Me.CH040.AutoSize = True
+        Me.CH040.Location = New System.Drawing.Point(102, 125)
+        Me.CH040.Name = "CH040"
+        Me.CH040.Size = New System.Drawing.Size(83, 19)
+        Me.CH040.TabIndex = 19
+        Me.CH040.Text = "Empty (L7)"
+        Me.CH040.UseVisualStyleBackColor = True
+        '
+        'CH037
+        '
+        Me.CH037.AutoSize = True
+        Me.CH037.Location = New System.Drawing.Point(7, 125)
+        Me.CH037.Name = "CH037"
+        Me.CH037.Size = New System.Drawing.Size(73, 19)
+        Me.CH037.TabIndex = 18
+        Me.CH037.Text = "Cola (L6)"
+        Me.CH037.UseVisualStyleBackColor = True
+        '
+        'CH030
+        '
+        Me.CH030.AutoSize = True
+        Me.CH030.Location = New System.Drawing.Point(197, 108)
+        Me.CH030.Name = "CH030"
+        Me.CH030.Size = New System.Drawing.Size(84, 19)
+        Me.CH030.TabIndex = 17
+        Me.CH030.Text = "Burger (L4)"
+        Me.CH030.UseVisualStyleBackColor = True
+        '
+        'CH033
+        '
+        Me.CH033.AutoSize = True
+        Me.CH033.Location = New System.Drawing.Point(197, 91)
+        Me.CH033.Name = "CH033"
+        Me.CH033.Size = New System.Drawing.Size(83, 19)
+        Me.CH033.TabIndex = 16
+        Me.CH033.Text = "Empty (L4)"
+        Me.CH033.UseVisualStyleBackColor = True
+        '
+        'CH027
+        '
+        Me.CH027.AutoSize = True
+        Me.CH027.Location = New System.Drawing.Point(197, 74)
+        Me.CH027.Name = "CH027"
+        Me.CH027.Size = New System.Drawing.Size(83, 19)
+        Me.CH027.TabIndex = 14
+        Me.CH027.Text = "Empty (L3)"
+        Me.CH027.UseVisualStyleBackColor = True
+        '
+        'CH022
+        '
+        Me.CH022.AutoSize = True
+        Me.CH022.Location = New System.Drawing.Point(197, 23)
+        Me.CH022.Name = "CH022"
+        Me.CH022.Size = New System.Drawing.Size(83, 19)
+        Me.CH022.TabIndex = 13
+        Me.CH022.Text = "Empty (L2)"
+        Me.CH022.UseVisualStyleBackColor = True
+        '
+        'CH029
+        '
+        Me.CH029.AutoSize = True
+        Me.CH029.Location = New System.Drawing.Point(197, 57)
+        Me.CH029.Name = "CH029"
+        Me.CH029.Size = New System.Drawing.Size(87, 19)
+        Me.CH029.TabIndex = 15
+        Me.CH029.Text = "10 MST (L3)"
+        Me.CH029.UseVisualStyleBackColor = True
         '
         'CH026
         '
@@ -233,6 +632,16 @@ Partial Class frmChests
         Me.CH009.TabIndex = 8
         Me.CH009.Text = "Empty (L0)"
         Me.CH009.UseVisualStyleBackColor = True
+        '
+        'CH023
+        '
+        Me.CH023.AutoSize = True
+        Me.CH023.Location = New System.Drawing.Point(197, 40)
+        Me.CH023.Name = "CH023"
+        Me.CH023.Size = New System.Drawing.Size(84, 19)
+        Me.CH023.TabIndex = 12
+        Me.CH023.Text = "Burger (L2)"
+        Me.CH023.UseVisualStyleBackColor = True
         '
         'CH010
         '
@@ -329,7 +738,7 @@ Partial Class frmChests
         Me.GroupBox16.Controls.Add(Me.CH094)
         Me.GroupBox16.Controls.Add(Me.CH090)
         Me.GroupBox16.Controls.Add(Me.CH088)
-        Me.GroupBox16.Location = New System.Drawing.Point(126, 217)
+        Me.GroupBox16.Location = New System.Drawing.Point(126, 200)
         Me.GroupBox16.Name = "GroupBox16"
         Me.GroupBox16.Size = New System.Drawing.Size(364, 109)
         Me.GroupBox16.TabIndex = 14
@@ -472,9 +881,9 @@ Partial Class frmChests
         Me.GroupBox15.Controls.Add(Me.CH086)
         Me.GroupBox15.Controls.Add(Me.CH085)
         Me.GroupBox15.Controls.Add(Me.CH084)
-        Me.GroupBox15.Location = New System.Drawing.Point(7, 179)
+        Me.GroupBox15.Location = New System.Drawing.Point(11, 217)
         Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(111, 89)
+        Me.GroupBox15.Size = New System.Drawing.Size(107, 89)
         Me.GroupBox15.TabIndex = 13
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = " Abion Island"
@@ -522,11 +931,12 @@ Partial Class frmChests
         'GroupBox13
         '
         Me.GroupBox13.Controls.Add(Me.CH068)
+        Me.GroupBox13.Controls.Add(Me.CH075)
         Me.GroupBox13.Controls.Add(Me.CH065)
         Me.GroupBox13.Controls.Add(Me.CH076)
         Me.GroupBox13.Location = New System.Drawing.Point(126, 96)
         Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(101, 77)
+        Me.GroupBox13.Size = New System.Drawing.Size(101, 96)
         Me.GroupBox13.TabIndex = 12
         Me.GroupBox13.TabStop = False
         Me.GroupBox13.Text = "Naula Cave"
@@ -540,6 +950,16 @@ Partial Class frmChests
         Me.CH068.TabIndex = 1
         Me.CH068.Text = "10 MST"
         Me.CH068.UseVisualStyleBackColor = True
+        '
+        'CH075
+        '
+        Me.CH075.AutoSize = True
+        Me.CH075.Location = New System.Drawing.Point(6, 69)
+        Me.CH075.Name = "CH075"
+        Me.CH075.Size = New System.Drawing.Size(76, 19)
+        Me.CH075.TabIndex = 13
+        Me.CH075.Text = "Flash (L2)"
+        Me.CH075.UseVisualStyleBackColor = True
         '
         'CH065
         '
@@ -769,9 +1189,9 @@ Partial Class frmChests
         'GroupBox10
         '
         Me.GroupBox10.Controls.Add(Me.CH004)
-        Me.GroupBox10.Location = New System.Drawing.Point(126, 179)
+        Me.GroupBox10.Location = New System.Drawing.Point(11, 181)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(101, 36)
+        Me.GroupBox10.Size = New System.Drawing.Size(107, 36)
         Me.GroupBox10.TabIndex = 9
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "Dr. Luveno"
@@ -790,9 +1210,10 @@ Partial Class frmChests
         '
         Me.GroupBox9.Controls.Add(Me.CH003)
         Me.GroupBox9.Controls.Add(Me.CH002)
-        Me.GroupBox9.Location = New System.Drawing.Point(6, 111)
+        Me.GroupBox9.Controls.Add(Me.CH001)
+        Me.GroupBox9.Location = New System.Drawing.Point(6, 92)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(113, 62)
+        Me.GroupBox9.Size = New System.Drawing.Size(113, 83)
         Me.GroupBox9.TabIndex = 8
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Odin Cave"
@@ -817,14 +1238,23 @@ Partial Class frmChests
         Me.CH002.Text = "Medusa Cave 1"
         Me.CH002.UseVisualStyleBackColor = True
         '
+        'CH001
+        '
+        Me.CH001.AutoSize = True
+        Me.CH001.Location = New System.Drawing.Point(6, 55)
+        Me.CH001.Name = "CH001"
+        Me.CH001.Size = New System.Drawing.Size(75, 19)
+        Me.CH001.TabIndex = 0
+        Me.CH001.Text = "Compass"
+        Me.CH001.UseVisualStyleBackColor = True
+        '
         'GroupBox8
         '
         Me.GroupBox8.Controls.Add(Me.CH006)
         Me.GroupBox8.Controls.Add(Me.CH005)
-        Me.GroupBox8.Controls.Add(Me.CH001)
         Me.GroupBox8.Location = New System.Drawing.Point(6, 22)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(113, 83)
+        Me.GroupBox8.Size = New System.Drawing.Size(113, 68)
         Me.GroupBox8.TabIndex = 7
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Camineet"
@@ -832,7 +1262,7 @@ Partial Class frmChests
         'CH006
         '
         Me.CH006.AutoSize = True
-        Me.CH006.Location = New System.Drawing.Point(6, 59)
+        Me.CH006.Location = New System.Drawing.Point(5, 41)
         Me.CH006.Name = "CH006"
         Me.CH006.Size = New System.Drawing.Size(64, 19)
         Me.CH006.TabIndex = 2
@@ -842,29 +1272,19 @@ Partial Class frmChests
         'CH005
         '
         Me.CH005.AutoSize = True
-        Me.CH005.Location = New System.Drawing.Point(6, 40)
+        Me.CH005.Location = New System.Drawing.Point(5, 22)
         Me.CH005.Name = "CH005"
         Me.CH005.Size = New System.Drawing.Size(97, 19)
         Me.CH005.TabIndex = 1
         Me.CH005.Text = "Dungeon Key"
         Me.CH005.UseVisualStyleBackColor = True
         '
-        'CH001
-        '
-        Me.CH001.AutoSize = True
-        Me.CH001.Location = New System.Drawing.Point(6, 20)
-        Me.CH001.Name = "CH001"
-        Me.CH001.Size = New System.Drawing.Size(75, 19)
-        Me.CH001.TabIndex = 0
-        Me.CH001.Text = "Compass"
-        Me.CH001.UseVisualStyleBackColor = True
-        '
         'grpMotavia
         '
         Me.grpMotavia.Controls.Add(Me.GroupBox14)
         Me.grpMotavia.Controls.Add(Me.GroupBox6)
         Me.grpMotavia.Controls.Add(Me.GroupBox5)
-        Me.grpMotavia.Location = New System.Drawing.Point(596, 19)
+        Me.grpMotavia.Location = New System.Drawing.Point(94, 476)
         Me.grpMotavia.Name = "grpMotavia"
         Me.grpMotavia.Size = New System.Drawing.Size(496, 187)
         Me.grpMotavia.TabIndex = 8
@@ -1166,9 +1586,9 @@ Partial Class frmChests
         '
         Me.GroupBox7.Controls.Add(Me.GroupBox18)
         Me.GroupBox7.Controls.Add(Me.GroupBox17)
-        Me.GroupBox7.Location = New System.Drawing.Point(722, 225)
+        Me.GroupBox7.Location = New System.Drawing.Point(597, 476)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(198, 131)
+        Me.GroupBox7.Size = New System.Drawing.Size(286, 161)
         Me.GroupBox7.TabIndex = 10
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Dezolis"
@@ -1176,7 +1596,7 @@ Partial Class frmChests
         'GroupBox18
         '
         Me.GroupBox18.Controls.Add(Me.CH128)
-        Me.GroupBox18.Location = New System.Drawing.Point(109, 22)
+        Me.GroupBox18.Location = New System.Drawing.Point(13, 105)
         Me.GroupBox18.Name = "GroupBox18"
         Me.GroupBox18.Size = New System.Drawing.Size(79, 42)
         Me.GroupBox18.TabIndex = 1
@@ -1238,12 +1658,13 @@ Partial Class frmChests
         'dummy
         '
         Me.dummy.AutoSize = True
-        Me.dummy.Location = New System.Drawing.Point(941, 271)
+        Me.dummy.Location = New System.Drawing.Point(12, 489)
         Me.dummy.Name = "dummy"
         Me.dummy.Size = New System.Drawing.Size(68, 19)
         Me.dummy.TabIndex = 11
         Me.dummy.Text = "dummy"
         Me.dummy.UseVisualStyleBackColor = True
+        Me.dummy.Visible = False
         '
         'btnHide
         '
@@ -1258,7 +1679,7 @@ Partial Class frmChests
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1189, 753)
+        Me.ClientSize = New System.Drawing.Size(897, 670)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnHide)
         Me.Controls.Add(Me.dummy)
@@ -1268,6 +1689,8 @@ Partial Class frmChests
         Me.Name = "frmChests"
         Me.Text = "Chests"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.GroupBox19.ResumeLayout(False)
         Me.GroupBox19.PerformLayout()
         Me.GroupBox16.ResumeLayout(False)
@@ -1406,4 +1829,39 @@ Partial Class frmChests
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents dummy As CheckBox
     Friend WithEvents btnHide As Button
+    Friend WithEvents CH022 As CheckBox
+    Friend WithEvents CH033 As CheckBox
+    Friend WithEvents CH029 As CheckBox
+    Friend WithEvents CH027 As CheckBox
+    Friend WithEvents CH030 As CheckBox
+    Friend WithEvents CH037 As CheckBox
+    Friend WithEvents CH040 As CheckBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents CH048 As CheckBox
+    Friend WithEvents CH042 As CheckBox
+    Friend WithEvents CH045 As CheckBox
+    Friend WithEvents CH035 As CheckBox
+    Friend WithEvents CH036 As CheckBox
+    Friend WithEvents CH034 As CheckBox
+    Friend WithEvents CH046 As CheckBox
+    Friend WithEvents CH052 As CheckBox
+    Friend WithEvents CH053 As CheckBox
+    Friend WithEvents CH054 As CheckBox
+    Friend WithEvents CH057 As CheckBox
+    Friend WithEvents CH050 As CheckBox
+    Friend WithEvents CH049 As CheckBox
+    Friend WithEvents CH039 As CheckBox
+    Friend WithEvents CH044 As CheckBox
+    Friend WithEvents CH038 As CheckBox
+    Friend WithEvents CH043 As CheckBox
+    Friend WithEvents CH041 As CheckBox
+    Friend WithEvents CH047 As CheckBox
+    Friend WithEvents CH051 As CheckBox
+    Friend WithEvents CH055 As CheckBox
+    Friend WithEvents CH062 As CheckBox
+    Friend WithEvents CH058 As CheckBox
+    Friend WithEvents CH059 As CheckBox
+    Friend WithEvents CH061 As CheckBox
+    Friend WithEvents CH060 As CheckBox
+    Friend WithEvents CH075 As CheckBox
 End Class

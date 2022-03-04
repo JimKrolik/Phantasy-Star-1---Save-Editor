@@ -5,6 +5,12 @@
 'To Do:  Add routine for saving Chests
 'Add code for file selection of loading
 'Add code for generating backup before save
+'Finish adding Dezolis chests
+'Fix tunnel chests (named checkbox 1-3)
+'Add code to generate dungeons
+'Add save file path selector
+'Add saves 2-5 offsets.
+'Possibly add overworld position save selector.
 
 
 Public Class frmMain
@@ -171,13 +177,21 @@ Public Class frmMain
         '### Chests ###
         '##############
 
-        For i = 0 To 127
+        For i = 0 To 149
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 Game.checkChests(i, False)
             Else
                 Game.checkChests(i, True)
             End If
         Next
+
+        '#####################
+        '### Form Controls ###
+        '#####################
+
+        If lstInventory.Items.Count >= 32 Then
+            btnInventoryAdd.Enabled = False
+        End If
 
         '######################
         '### Dungeon Layout ###
@@ -196,14 +210,15 @@ Public Class frmMain
 
         Next
 
-        '#####################
-        '### Form Controls ###
-        '#####################
+        '#########################
+        '### Dungeon Drop Down ###
+        '#########################
 
-        If lstInventory.Items.Count >= 32 Then
-            btnInventoryAdd.Enabled = False
-        End If
+        For i = 0 To 19
+            frmSave.cmbDungeonSelector.Items.Add(Game.DungeonName(i))
 
+        Next
+        frmSave.cmbDungeonSelector.SelectedIndex = 0
 
         file.Dispose()
         file.Close()

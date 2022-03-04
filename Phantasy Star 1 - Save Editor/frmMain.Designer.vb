@@ -311,7 +311,6 @@ Partial Class frmMain
         '
         Me.AlisCurrentHP.Location = New System.Drawing.Point(48, 52)
         Me.AlisCurrentHP.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.AlisCurrentHP.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.AlisCurrentHP.Name = "AlisCurrentHP"
         Me.AlisCurrentHP.Size = New System.Drawing.Size(41, 23)
         Me.AlisCurrentHP.TabIndex = 3
@@ -503,7 +502,6 @@ Partial Class frmMain
         '
         Me.MyauCurrentHP.Location = New System.Drawing.Point(47, 54)
         Me.MyauCurrentHP.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.MyauCurrentHP.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.MyauCurrentHP.Name = "MyauCurrentHP"
         Me.MyauCurrentHP.Size = New System.Drawing.Size(41, 23)
         Me.MyauCurrentHP.TabIndex = 31
@@ -688,7 +686,6 @@ Partial Class frmMain
         '
         Me.OdinCurrentHP.Location = New System.Drawing.Point(47, 57)
         Me.OdinCurrentHP.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.OdinCurrentHP.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.OdinCurrentHP.Name = "OdinCurrentHP"
         Me.OdinCurrentHP.Size = New System.Drawing.Size(41, 23)
         Me.OdinCurrentHP.TabIndex = 48
@@ -873,7 +870,6 @@ Partial Class frmMain
         '
         Me.NoahCurrentHP.Location = New System.Drawing.Point(47, 60)
         Me.NoahCurrentHP.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NoahCurrentHP.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NoahCurrentHP.Name = "NoahCurrentHP"
         Me.NoahCurrentHP.Size = New System.Drawing.Size(41, 23)
         Me.NoahCurrentHP.TabIndex = 65
