@@ -18,3 +18,9 @@ Do you want to start the game maxed out with gear and stats?
 
 Disclaimer: I realize this could be used to exploit achievements on achievement based websites (such as RetroAchievements) that integrate with classic games, 
 but I fully support the idea of learning for the sake of knowledge and understanding how things work. 
+
+Special thanks to the following sites as their information was helpful in developing this program:
+
+https://github.com/lory90/ps1disasm - Full disassembly of Phantasy Star 1.
+https://www.pscave.com/ - Maps and walkthrough.
+https://shrines.rpgclassics.com/sms/ps1/ - Maps and walkthrough.
