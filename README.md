@@ -22,5 +22,7 @@ but I fully support the idea of learning for the sake of knowledge and understan
 Special thanks to the following sites as their information was helpful in developing this program:
 
 https://github.com/lory90/ps1disasm - Full disassembly of Phantasy Star 1.
+
 https://www.pscave.com/ - Maps and walkthrough.
+
 https://shrines.rpgclassics.com/sms/ps1/ - Maps and walkthrough.
