@@ -177,7 +177,7 @@ Public Class frmMain
         '### Chests ###
         '##############
 
-        For i = 0 To 149
+        For i = 0 To 129 '149
             If bytes(Game.ChestOffset(currentSave) + i) = 0 Then
                 Game.checkChests(i, False)
             Else

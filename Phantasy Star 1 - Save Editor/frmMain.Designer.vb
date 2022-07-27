@@ -370,9 +370,9 @@ Partial Class frmMain
         Me.grpMyau.Controls.Add(Me.Label12)
         Me.grpMyau.Controls.Add(Me.Label13)
         Me.grpMyau.Controls.Add(Me.MyauLevel)
-        Me.grpMyau.Location = New System.Drawing.Point(293, 19)
+        Me.grpMyau.Location = New System.Drawing.Point(293, 12)
         Me.grpMyau.Name = "grpMyau"
-        Me.grpMyau.Size = New System.Drawing.Size(185, 326)
+        Me.grpMyau.Size = New System.Drawing.Size(185, 333)
         Me.grpMyau.TabIndex = 2
         Me.grpMyau.TabStop = False
         Me.grpMyau.Text = "Myau"
@@ -952,7 +952,7 @@ Partial Class frmMain
         '
         'GroupBox2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(495, 353)
+        Me.GroupBox2.Location = New System.Drawing.Point(484, 353)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(149, 317)
         Me.GroupBox2.TabIndex = 14

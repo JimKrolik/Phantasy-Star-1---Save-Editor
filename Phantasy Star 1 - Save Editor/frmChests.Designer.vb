@@ -160,6 +160,9 @@ Partial Class frmChests
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.dummy = New System.Windows.Forms.CheckBox()
         Me.btnHide = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.CH129 = New System.Windows.Forms.CheckBox()
+        Me.CH130 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox19.SuspendLayout()
@@ -178,6 +181,7 @@ Partial Class frmChests
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox18.SuspendLayout()
         Me.GroupBox17.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -1584,11 +1588,12 @@ Partial Class frmChests
         '
         'GroupBox7
         '
+        Me.GroupBox7.Controls.Add(Me.GroupBox3)
         Me.GroupBox7.Controls.Add(Me.GroupBox18)
         Me.GroupBox7.Controls.Add(Me.GroupBox17)
         Me.GroupBox7.Location = New System.Drawing.Point(597, 476)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(286, 161)
+        Me.GroupBox7.Size = New System.Drawing.Size(430, 212)
         Me.GroupBox7.TabIndex = 10
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Dezolis"
@@ -1675,11 +1680,42 @@ Partial Class frmChests
         Me.btnHide.Text = "&Close"
         Me.btnHide.UseVisualStyleBackColor = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.CH130)
+        Me.GroupBox3.Controls.Add(Me.CH129)
+        Me.GroupBox3.Location = New System.Drawing.Point(112, 23)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox3.TabIndex = 2
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Fort Guardo"
+        '
+        'CH129
+        '
+        Me.CH129.AutoSize = True
+        Me.CH129.Location = New System.Drawing.Point(7, 21)
+        Me.CH129.Name = "CH129"
+        Me.CH129.Size = New System.Drawing.Size(61, 19)
+        Me.CH129.TabIndex = 0
+        Me.CH129.Text = "Burger"
+        Me.CH129.UseVisualStyleBackColor = True
+        '
+        'CH130
+        '
+        Me.CH130.AutoSize = True
+        Me.CH130.Location = New System.Drawing.Point(7, 38)
+        Me.CH130.Name = "CH130"
+        Me.CH130.Size = New System.Drawing.Size(111, 19)
+        Me.CH130.TabIndex = 1
+        Me.CH130.Text = "Laconian Armor"
+        Me.CH130.UseVisualStyleBackColor = True
+        '
         'frmChests
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(897, 670)
+        Me.ClientSize = New System.Drawing.Size(1146, 740)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnHide)
         Me.Controls.Add(Me.dummy)
@@ -1721,6 +1757,8 @@ Partial Class frmChests
         Me.GroupBox18.PerformLayout()
         Me.GroupBox17.ResumeLayout(False)
         Me.GroupBox17.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1864,4 +1902,7 @@ Partial Class frmChests
     Friend WithEvents CH061 As CheckBox
     Friend WithEvents CH060 As CheckBox
     Friend WithEvents CH075 As CheckBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents CH130 As CheckBox
+    Friend WithEvents CH129 As CheckBox
 End Class

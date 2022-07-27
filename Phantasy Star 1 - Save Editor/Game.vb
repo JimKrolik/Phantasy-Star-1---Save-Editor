@@ -59,7 +59,7 @@ Public Class Game
 
     Public Shared Sub checkChests(checkBoxNum As Integer, isItChecked As Boolean)
         'Map our checkboxes into an array 
-        Dim chest(200) As CheckBox
+        Dim chest(130) As CheckBox
 
 
         chest(0) = frmChests.CH001            'Palma      Camineet            Compass
@@ -199,6 +199,10 @@ Public Class Game
         chest(126) = frmChests.dummy
 
         chest(127) = frmChests.CH128          'Dezolis    Skure           500 MST
+        chest(128) = frmChests.CH129          'Dezolis    Fort Guardo     Burger
+        chest(129) = frmChests.CH130          'Dezolis    Fort Guardo     Laconian Armor
+
+        chest(130) = frmChests.dummy
 
         'Re-call the function to visually check the box if the flag is active.
         chest(checkBoxNum).Checked = isItChecked
