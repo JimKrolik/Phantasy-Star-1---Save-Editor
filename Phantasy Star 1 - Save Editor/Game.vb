@@ -76,8 +76,8 @@ Public Class Game
         "CasbaCaveB2F",
         "CasbaCaveB1F",
         "CasbaCave1F",
-        "SkureTunnel",
-        "TwintownTunnel",
+        "Skure Tunnel",
+        "Twin Town Tunnel",
         "FortGuaronB1F",
         "FortGuaron1F",
         "CoronaTower1F",
@@ -96,14 +96,14 @@ Public Class Game
         "LacShieldCaveB2F",
         "LacShieldCaveB1F",
         "LacShieldCave1F",
-        "AirCastleB4F",
-        "AirCastleB3F",
-        "AirCastleB2F",
-        "AirCastleB1F",
-        "AirCastle1F",
-        "AeroPrismCave",
-        "CreditsDungeonB1F",
-        "CreditsDungeon1F"
+        "Air Castle Basement 4",
+        "Air Castle Basement 3",
+        "Air Castle Basement 2",
+        "Air Castle Basement 1",
+        "Air Castle 1st Floor",
+        "Aero Prism Cave",
+        "Credits Dungeon Basement",
+        "Credits Dungeon 1st Floor"
     }
 
     'bank 15

@@ -214,7 +214,7 @@ Public Class frmMain
         '### Dungeon Drop Down ###
         '#########################
 
-        For i = 0 To 19
+        For i = 0 To 77
             frmSave.cmbDungeonSelector.Items.Add(Game.DungeonName(i))
 
         Next
