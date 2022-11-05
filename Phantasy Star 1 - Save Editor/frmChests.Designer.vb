@@ -152,6 +152,12 @@ Partial Class frmChests
         Me.CH111 = New System.Windows.Forms.CheckBox()
         Me.CH110 = New System.Windows.Forms.CheckBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.CH135 = New System.Windows.Forms.CheckBox()
+        Me.CH134 = New System.Windows.Forms.CheckBox()
+        Me.CH133 = New System.Windows.Forms.CheckBox()
+        Me.CH132 = New System.Windows.Forms.CheckBox()
+        Me.CH131 = New System.Windows.Forms.CheckBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.CH130 = New System.Windows.Forms.CheckBox()
         Me.CH129 = New System.Windows.Forms.CheckBox()
@@ -163,12 +169,6 @@ Partial Class frmChests
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.dummy = New System.Windows.Forms.CheckBox()
         Me.btnHide = New System.Windows.Forms.Button()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.CH131 = New System.Windows.Forms.CheckBox()
-        Me.CH132 = New System.Windows.Forms.CheckBox()
-        Me.CH133 = New System.Windows.Forms.CheckBox()
-        Me.CH134 = New System.Windows.Forms.CheckBox()
-        Me.CH135 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox19.SuspendLayout()
@@ -185,10 +185,10 @@ Partial Class frmChests
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox18.SuspendLayout()
         Me.GroupBox17.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -1606,6 +1606,70 @@ Partial Class frmChests
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Dezolis"
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.CH135)
+        Me.GroupBox4.Controls.Add(Me.CH134)
+        Me.GroupBox4.Controls.Add(Me.CH133)
+        Me.GroupBox4.Controls.Add(Me.CH132)
+        Me.GroupBox4.Controls.Add(Me.CH131)
+        Me.GroupBox4.Location = New System.Drawing.Point(243, 23)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(157, 141)
+        Me.GroupBox4.TabIndex = 3
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Corona Tower"
+        '
+        'CH135
+        '
+        Me.CH135.AutoSize = True
+        Me.CH135.Location = New System.Drawing.Point(7, 90)
+        Me.CH135.Name = "CH135"
+        Me.CH135.Size = New System.Drawing.Size(136, 19)
+        Me.CH135.TabIndex = 4
+        Me.CH135.Text = "20 MST (L3, L2 Stairs)"
+        Me.CH135.UseVisualStyleBackColor = True
+        '
+        'CH134
+        '
+        Me.CH134.AutoSize = True
+        Me.CH134.Location = New System.Drawing.Point(7, 73)
+        Me.CH134.Name = "CH134"
+        Me.CH134.Size = New System.Drawing.Size(70, 19)
+        Me.CH134.TabIndex = 3
+        Me.CH134.Text = "500 MST"
+        Me.CH134.UseVisualStyleBackColor = True
+        '
+        'CH133
+        '
+        Me.CH133.AutoSize = True
+        Me.CH133.Location = New System.Drawing.Point(7, 56)
+        Me.CH133.Name = "CH133"
+        Me.CH133.Size = New System.Drawing.Size(61, 19)
+        Me.CH133.TabIndex = 2
+        Me.CH133.Text = "Burger"
+        Me.CH133.UseVisualStyleBackColor = True
+        '
+        'CH132
+        '
+        Me.CH132.AutoSize = True
+        Me.CH132.Location = New System.Drawing.Point(7, 39)
+        Me.CH132.Name = "CH132"
+        Me.CH132.Size = New System.Drawing.Size(48, 19)
+        Me.CH132.TabIndex = 1
+        Me.CH132.Text = "Trap"
+        Me.CH132.UseVisualStyleBackColor = True
+        '
+        'CH131
+        '
+        Me.CH131.AutoSize = True
+        Me.CH131.Location = New System.Drawing.Point(7, 22)
+        Me.CH131.Name = "CH131"
+        Me.CH131.Size = New System.Drawing.Size(66, 19)
+        Me.CH131.TabIndex = 0
+        Me.CH131.Text = "Escaper"
+        Me.CH131.UseVisualStyleBackColor = True
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.CH130)
@@ -1702,7 +1766,7 @@ Partial Class frmChests
         'dummy
         '
         Me.dummy.AutoSize = True
-        Me.dummy.Location = New System.Drawing.Point(12, 489)
+        Me.dummy.Location = New System.Drawing.Point(13, 54)
         Me.dummy.Name = "dummy"
         Me.dummy.Size = New System.Drawing.Size(68, 19)
         Me.dummy.TabIndex = 11
@@ -1718,70 +1782,6 @@ Partial Class frmChests
         Me.btnHide.TabIndex = 12
         Me.btnHide.Text = "&Close"
         Me.btnHide.UseVisualStyleBackColor = True
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.CH135)
-        Me.GroupBox4.Controls.Add(Me.CH134)
-        Me.GroupBox4.Controls.Add(Me.CH133)
-        Me.GroupBox4.Controls.Add(Me.CH132)
-        Me.GroupBox4.Controls.Add(Me.CH131)
-        Me.GroupBox4.Location = New System.Drawing.Point(243, 23)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(157, 141)
-        Me.GroupBox4.TabIndex = 3
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Corona Tower"
-        '
-        'CH131
-        '
-        Me.CH131.AutoSize = True
-        Me.CH131.Location = New System.Drawing.Point(7, 22)
-        Me.CH131.Name = "CH131"
-        Me.CH131.Size = New System.Drawing.Size(66, 19)
-        Me.CH131.TabIndex = 0
-        Me.CH131.Text = "Escaper"
-        Me.CH131.UseVisualStyleBackColor = True
-        '
-        'CH132
-        '
-        Me.CH132.AutoSize = True
-        Me.CH132.Location = New System.Drawing.Point(7, 39)
-        Me.CH132.Name = "CH132"
-        Me.CH132.Size = New System.Drawing.Size(48, 19)
-        Me.CH132.TabIndex = 1
-        Me.CH132.Text = "Trap"
-        Me.CH132.UseVisualStyleBackColor = True
-        '
-        'CH133
-        '
-        Me.CH133.AutoSize = True
-        Me.CH133.Location = New System.Drawing.Point(7, 56)
-        Me.CH133.Name = "CH133"
-        Me.CH133.Size = New System.Drawing.Size(61, 19)
-        Me.CH133.TabIndex = 2
-        Me.CH133.Text = "Burger"
-        Me.CH133.UseVisualStyleBackColor = True
-        '
-        'CH134
-        '
-        Me.CH134.AutoSize = True
-        Me.CH134.Location = New System.Drawing.Point(7, 73)
-        Me.CH134.Name = "CH134"
-        Me.CH134.Size = New System.Drawing.Size(70, 19)
-        Me.CH134.TabIndex = 3
-        Me.CH134.Text = "500 MST"
-        Me.CH134.UseVisualStyleBackColor = True
-        '
-        'CH135
-        '
-        Me.CH135.AutoSize = True
-        Me.CH135.Location = New System.Drawing.Point(7, 90)
-        Me.CH135.Name = "CH135"
-        Me.CH135.Size = New System.Drawing.Size(136, 19)
-        Me.CH135.TabIndex = 4
-        Me.CH135.Text = "20 MST (L3, L2 Stairs)"
-        Me.CH135.UseVisualStyleBackColor = True
         '
         'frmChests
         '
@@ -1825,14 +1825,14 @@ Partial Class frmChests
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox18.ResumeLayout(False)
         Me.GroupBox18.PerformLayout()
         Me.GroupBox17.ResumeLayout(False)
         Me.GroupBox17.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

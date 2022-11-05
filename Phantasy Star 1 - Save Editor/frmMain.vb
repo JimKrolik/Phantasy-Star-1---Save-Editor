@@ -11,6 +11,7 @@
 'Add save file path selector
 'Add saves 2-5 offsets.
 'Possibly add overworld position save selector.
+'Add event flags
 
 
 Public Class frmMain
